@@ -20,7 +20,8 @@ wide range of LSPs, formatters, linters and debuggers.
 
 ## Preview Instructions
 
- > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+> Install requires Neovim 0.9+. Always review the code before installing a
+> configuration.
 
 Clone the repository and install the plugins:
 
@@ -52,19 +53,21 @@ nvim
 
 ## Language Servers
 
-- Bash Language Server
-- Clangd
-- CSS Language Server
-- Dockerfile Language Server
+- bash-language-server
+- clangd
+- css-lsp
+- dockerfile-language-server
 - gopls
-- HTML Language Server
-- Lua Language Server
-- Marksman
-- Pyright
-- Terraform Language Server
-- Typescript Language Server
-- VimScript Language Server
-- YAML Language Server
+- html-lsp
+- lua-language-server
+- marksman
+- pyright
+- rubocop
+- terraform-ls
+- tflint
+- typescript-language-server
+- vim-language-server
+- yaml-language-server
 
 ## Formatters
 
@@ -73,6 +76,7 @@ nvim
 - clang-format
 - gofmt
 - isort
+- markdownlint
 - prettier
 - rubocop
 - stylua
@@ -83,12 +87,13 @@ nvim
 
 - golangci-lint
 - markdownlint
+- rubocop
 - tflint
 
 ## Debuggers
 
-- Delve
-- DebugPy
+- delve
+- debugpy
 
 ## Preview
 
