@@ -142,7 +142,6 @@ local plugins = {
   },
   {
     "nvim-tree/nvim-tree.lua",
-    lazy = false,
     opts = nvimtree.opts,
   },
   {
