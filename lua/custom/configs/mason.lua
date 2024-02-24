@@ -3,7 +3,6 @@ local M = {}
 M.opts = {
   ensure_installed = {
     "bash-language-server",
-    "beautysh",
     "black",
     "clangd",
     "clang-format",
@@ -25,6 +24,7 @@ M.opts = {
     "prettier",
     "pyright",
     "rubocop",
+    "shfmt",
     "vim-language-server",
     "yamlfmt",
     "yaml-language-server",

@@ -71,7 +71,6 @@ nvim
 
 ## Formatters
 
-- beautysh
 - black
 - clang-format
 - gofmt
@@ -79,6 +78,7 @@ nvim
 - markdownlint
 - prettier
 - rubocop
+- shfmt
 - stylua
 - terraform_fmt
 - yamlfmt
