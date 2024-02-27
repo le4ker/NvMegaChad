@@ -1,14 +1,9 @@
-local gitsigns = require "custom.configs.gitsigns"
 local nvimtree = require "custom.configs.nvimtree"
 local nvterm = require "custom.configs.nvterm"
 local treesitter = require "custom.configs.treesitter"
 
 ---@type NvPluginSpec[]
 local plugins = {
-  {
-    "lewis6991/gitsigns.nvim",
-    opts = gitsigns.opts,
-  },
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
