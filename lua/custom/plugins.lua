@@ -1,4 +1,3 @@
-local cmp = require "custom.configs.cmp"
 local gitsigns = require "custom.configs.gitsigns"
 local nvimtree = require "custom.configs.nvimtree"
 local nvterm = require "custom.configs.nvterm"
@@ -6,10 +5,6 @@ local treesitter = require "custom.configs.treesitter"
 
 ---@type NvPluginSpec[]
 local plugins = {
-  {
-    "hrsh7th/nvim-cmp",
-    opts = cmp.opts,
-  },
   {
     "lewis6991/gitsigns.nvim",
     opts = gitsigns.opts,
