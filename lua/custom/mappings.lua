@@ -64,6 +64,7 @@ M.general = {
           print "Format on save disabled"
         end
       end,
+      "Toggle format on save",
     },
   },
   t = {
