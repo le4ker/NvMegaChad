@@ -5,11 +5,6 @@ local treesitter = require "custom.configs.treesitter"
 ---@type NvPluginSpec[]
 local plugins = {
   {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {},
-  },
-  {
     "nvimtools/none-ls.nvim",
     ft = {
       "bash",
