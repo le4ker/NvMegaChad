@@ -1,11 +1,8 @@
 return {
   "zbirenbaum/copilot.lua",
-  config = function()
-    require("copilot").setup()
-  end,
   event = "InsertEnter",
   build = ":Copilot auth",
-  options = {
+  opts = {
     filetypes = {
       ["*"] = true,
     },
@@ -16,4 +13,7 @@ return {
       enabled = false,
     },
   },
+  config = function(_, opts)
+    require("copilot").setup(opts)
+  end,
 }
