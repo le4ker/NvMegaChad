@@ -97,6 +97,10 @@ nvim
 
 ## Preview
 
+### Editor
+
+![editor](.github/img/editor.png)
+
 ### Github Copilot
 
 ![copilot](.github/img/copilot.png)
@@ -108,6 +112,10 @@ nvim
 ### Git commits
 
 ![git-commits](.github/img/git-commits.png)
+
+### Debugger
+
+![debugger](.github/img/debugger.png)
 
 ### Markdown Preview
 
