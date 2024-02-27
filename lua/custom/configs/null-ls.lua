@@ -23,7 +23,12 @@ local opts = {
     },
     null_ls.builtins.formatting.rubocop,
     null_ls.builtins.formatting.shfmt,
-    null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.stylua.with {
+      extra_args = {
+        "--config-path",
+        vim.fn.expand "~/.config/nvim/configs/stylua.toml",
+      },
+    },
     null_ls.builtins.formatting.terraform_fmt,
     null_ls.builtins.formatting.yamlfmt,
   },
