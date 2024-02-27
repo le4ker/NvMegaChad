@@ -1,6 +1,5 @@
 local cmp = require "custom.configs.cmp"
 local gitsigns = require "custom.configs.gitsigns"
-local glow = require "custom.configs.glow"
 local mason = require "custom.configs.mason"
 local nvimtree = require "custom.configs.nvimtree"
 local nvterm = require "custom.configs.nvterm"
@@ -15,12 +14,6 @@ local plugins = {
   {
     "lewis6991/gitsigns.nvim",
     opts = gitsigns.opts,
-  },
-  {
-    "ellisonleao/glow.nvim",
-    config = true,
-    cmd = "Glow",
-    opts = glow.opts,
   },
   {
     "lukas-reineke/indent-blankline.nvim",
