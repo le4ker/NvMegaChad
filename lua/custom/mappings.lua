@@ -68,11 +68,11 @@ M.general = {
     },
   },
   t = {
-    ["<ESC>"] = { "<C-\\><C-n>", "escape terminal mode", opts = { nowait = true } },
-    ["jk"] = { "<C-\\><C-n>", "escape terminal mode", opts = { nowait = true } },
+    ["<ESC>"] = { "<C-\\><C-n>", "Escape terminal mode", opts = { nowait = true } },
+    ["jk"] = { "<C-\\><C-n>", "Escape terminal mode", opts = { nowait = true } },
   },
   i = {
-    ["jk"] = { "<ESC>", "escape insert mode", opts = { nowait = true } },
+    ["jk"] = { "<ESC>", "Escape insert mode", opts = { nowait = true } },
   },
 }
 
