@@ -1,6 +1,5 @@
 local cmp = require "custom.configs.cmp"
 local gitsigns = require "custom.configs.gitsigns"
-local mason = require "custom.configs.mason"
 local nvimtree = require "custom.configs.nvimtree"
 local nvterm = require "custom.configs.nvterm"
 local treesitter = require "custom.configs.treesitter"
@@ -19,10 +18,6 @@ local plugins = {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     opts = {},
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = mason.opts,
   },
   {
     "nvimtools/none-ls.nvim",
