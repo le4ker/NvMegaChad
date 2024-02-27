@@ -1,5 +1,4 @@
 local colorizer = require "custom.configs.colorizer"
-local copilot = require "custom.configs.copilot"
 local cmp = require "custom.configs.cmp"
 local gitsigns = require "custom.configs.gitsigns"
 local glow = require "custom.configs.glow"
@@ -13,14 +12,6 @@ local plugins = {
   {
     "NvChad/nvim-colorizer.lua",
     opts = colorizer.opts,
-  },
-  {
-    "zbirenbaum/copilot.lua",
-    event = "InsertEnter",
-    build = ":Copilot auth",
-    config = function()
-      require("copilot").setup(copilot.opts)
-    end,
   },
   {
     "zbirenbaum/copilot-cmp",
