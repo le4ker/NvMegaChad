@@ -9,17 +9,6 @@ local treesitter = require "custom.configs.treesitter"
 ---@type NvPluginSpec[]
 local plugins = {
   {
-    "zbirenbaum/copilot-cmp",
-    lazy = false,
-    dependencies = {
-      "hrsh7th/nvim-cmp",
-      "zbirenbaum/copilot.lua",
-    },
-    config = function()
-      require("copilot_cmp").setup()
-    end,
-  },
-  {
     "hrsh7th/nvim-cmp",
     opts = cmp.opts,
   },
