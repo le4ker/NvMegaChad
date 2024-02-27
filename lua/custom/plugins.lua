@@ -1,4 +1,3 @@
-local colorizer = require "custom.configs.colorizer"
 local cmp = require "custom.configs.cmp"
 local gitsigns = require "custom.configs.gitsigns"
 local glow = require "custom.configs.glow"
@@ -9,10 +8,6 @@ local treesitter = require "custom.configs.treesitter"
 
 ---@type NvPluginSpec[]
 local plugins = {
-  {
-    "NvChad/nvim-colorizer.lua",
-    opts = colorizer.opts,
-  },
   {
     "zbirenbaum/copilot-cmp",
     lazy = false,
