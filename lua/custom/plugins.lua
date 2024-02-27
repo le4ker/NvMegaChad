@@ -21,13 +21,6 @@ local plugins = {
     opts = {},
   },
   {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
-    end,
-  },
-  {
     "williamboman/mason.nvim",
     opts = mason.opts,
   },
