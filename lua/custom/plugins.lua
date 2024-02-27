@@ -5,30 +5,6 @@ local treesitter = require "custom.configs.treesitter"
 ---@type NvPluginSpec[]
 local plugins = {
   {
-    "nvimtools/none-ls.nvim",
-    ft = {
-      "bash",
-      "c",
-      "cpp",
-      "css",
-      "go",
-      "html",
-      "lua",
-      "markdown",
-      "python",
-      "ruby",
-      "scss",
-      "sh",
-      "terraform",
-      "typescriptreact",
-      "yaml",
-      "zsh",
-    },
-    opts = function()
-      return require "custom.configs.null-ls"
-    end,
-  },
-  {
     "NvChad/nvterm",
     opts = nvterm.opts,
   },
