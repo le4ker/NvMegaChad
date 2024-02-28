@@ -22,7 +22,7 @@ local opts = {
       },
     },
     null_ls.builtins.formatting.rubocop,
-    null_ls.builtins.formatting.shfmt.with{
+    null_ls.builtins.formatting.shfmt.with {
       filetypes = { "sh", "zsh" },
     },
     null_ls.builtins.formatting.stylua.with {
