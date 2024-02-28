@@ -95,6 +95,21 @@ nvim
 - delve
 - debugpy
 
+## Fetching upstream changes
+
+Add the upstream repository as a remote:
+
+```sh
+git remote add upstream https://github.com/NvChad/NvChad.git
+```
+
+And then you can rebase your local changes after fetching the upstream:
+
+```sh
+git fetch upstream
+git rebase upstream/v2.0
+```
+
 ## Preview
 
 ### Editor
