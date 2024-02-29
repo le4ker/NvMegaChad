@@ -47,6 +47,11 @@ lspconfig.marksman.setup {
   capabilities = capabilities,
 }
 
+lspconfig.rubocop.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
