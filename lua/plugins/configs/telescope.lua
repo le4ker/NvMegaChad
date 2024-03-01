@@ -48,15 +48,7 @@ local options = {
     },
   },
 
-  extensions_list = { "themes", "terms", "fzf" },
-  extensions = {
-    fzf = {
-      fuzzy = true,
-      override_generic_sorter = true,
-      override_file_sorter = true,
-      case_mode = "smart_case",
-    },
-  },
+  extensions_list = { "themes", "terms" },
 }
 
 return options
