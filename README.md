@@ -4,7 +4,9 @@
 ![leader](https://dotfyle.com/le4ker/nvmegachad/badges/leaderkey)
 ![lazy](https://dotfyle.com/le4ker/nvmegachad/badges/plugin-manager)
 
-![megaman](.github/img/megaman.jpeg)
+<p align="center">
+  ![megaman](.github/img/megaman.jpeg)
+</p>
 
 [Neovim](https://github.com/neovim/neovim/releases/tag/v0.9.0) configuration,
 based on the [NvChad](https://nvchad.com/) distribution. It has preconfigured a
