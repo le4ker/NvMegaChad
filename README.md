@@ -5,14 +5,14 @@
 ![lazy](https://dotfyle.com/le4ker/nvmegachad/badges/plugin-manager)
 
 <p align="center">
-  ![megaman](.github/img/megaman.jpeg)
+  <img src=".github/img/megaman.jpeg" alt="megaman" />
 </p>
 
-[Neovim](https://github.com/neovim/neovim/releases/tag/v0.9.0) configuration,
-based on the [NvChad](https://nvchad.com/) distribution. It has preconfigured a
-wide range of LSPs, formatters, linters and debuggers.
+[Neovim](https://neovim.io/) configuration, based on the
+[NvChad](https://nvchad.com/) distribution. It has preconfigured a wide range of
+LSPs, formatters, linters and debuggers, Github Copilot and Markdown preview.
 
-## Pre-requisites
+## Requirements
 
 - [Neovim 0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.0)
 - [Nerd Font](https://www.nerdfonts.com/)
@@ -20,7 +20,7 @@ wide range of LSPs, formatters, linters and debuggers.
 - [Glow](https://github.com/charmbracelet/glow)
 - [Terraform](https://www.terraform.io/)
 
-## Preview Instructions
+## Preview
 
 > Install requires Neovim 0.9+. Always review the code before installing a
 > configuration.
@@ -37,7 +37,7 @@ Open Neovim with this config:
 NVIM_APPNAME=le4ker/NvMegaChad/ nvim
 ```
 
-## Installation Instructions
+## Install
 
 Remove existing config:
 
@@ -113,7 +113,7 @@ git fetch upstream
 git rebase upstream/v2.0
 ```
 
-## Preview
+## Screenshots
 
 ### Editor
 
