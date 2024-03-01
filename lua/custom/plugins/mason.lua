@@ -24,6 +24,7 @@ return {
       "prettier",
       "pyright",
       "rubocop",
+      "ruby-lsp",
       "shfmt",
       "vim-language-server",
       "yamlfmt",

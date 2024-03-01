@@ -62,7 +62,7 @@ nvim
 - lua-language-server
 - marksman
 - pyright
-- rubocop
+- ruby-lsp
 - terraform-ls
 - tflint
 - typescript-language-server

@@ -47,7 +47,7 @@ lspconfig.marksman.setup {
   capabilities = capabilities,
 }
 
-lspconfig.rubocop.setup {
+lspconfig.ruby_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
