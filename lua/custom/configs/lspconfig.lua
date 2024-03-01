@@ -1,27 +1,29 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
+-- LSPs without configuration
+local default_lsps = {
+  "bashls",
+  "clangd",
+  "cssls",
+  "dockerls",
+  "html",
+  "marksman",
+  "ruby_ls",
+  "terraformls",
+  "tflint",
+  "tsserver",
+  "vimls",
+}
+
 local lspconfig = require "lspconfig"
 
-lspconfig.bashls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.clangd.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.dockerls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+for _, lsp in ipairs(default_lsps) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
 
 lspconfig.gopls.setup {
   on_attach = on_attach,
@@ -37,21 +39,6 @@ lspconfig.gopls.setup {
   },
 }
 
-lspconfig.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.marksman.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.ruby_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
 lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -64,26 +51,6 @@ lspconfig.pyright.setup {
       },
     },
   },
-}
-
-lspconfig.terraformls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.tflint.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.vimls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
 }
 
 lspconfig.yamlls.setup {
