@@ -8,6 +8,7 @@ return {
     "go",
     "graphql",
     "html",
+    "json",
     "lua",
     "markdown",
     "python",
