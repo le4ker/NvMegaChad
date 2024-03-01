@@ -22,6 +22,7 @@ return {
       "markdownlint",
       "marksman",
       "prettier",
+      "pylint",
       "pyright",
       "rubocop",
       "ruby-lsp",

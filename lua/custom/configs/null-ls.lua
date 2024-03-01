@@ -10,6 +10,7 @@ local opts = {
         vim.fn.expand "~/.config/nvim/configs/markdownlint.yaml",
       },
     },
+    null_ls.builtins.diagnostics.pylint,
     null_ls.builtins.diagnostics.rubocop,
     null_ls.builtins.formatting.black,
     null_ls.builtins.formatting.clang_format,

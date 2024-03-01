@@ -87,6 +87,7 @@ nvim
 
 - golangci-lint
 - markdownlint
+- pylint
 - rubocop
 - tflint
 
