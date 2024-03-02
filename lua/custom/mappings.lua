@@ -54,8 +54,8 @@ M.general = {
     ["<C-f>"] = { "<C-f>zz", "Move one page down", opts = { noremap = true } },
     ["<C-b>"] = { "<C-b>zz", "Move one page up", opts = { noremap = true } },
     ["<leader>s"] = { "<cmd> w <CR>", "Save file" },
-    ["<leader>pr"] = { "<cmd> Glow <CR>", "Preview Markdown file" },
     ["<leader>lu"] = { "<cmd> Lazy update <CR>", "Update plugins" },
+    ["<leader>pr"] = { "<cmd> Glow <CR>", "Preview Markdown file" },
     ["<leader>fmt"] = {
       function()
         vim.g.format_on_save = not vim.g.format_on_save
@@ -66,6 +66,19 @@ M.general = {
         end
       end,
       "Toggle format on save",
+    },
+    ["<leader>cp"] = {
+      function()
+        if vim.g.copilot_enabled then
+          vim.cmd "Copilot disable"
+          print "Copilot disabled"
+        else
+          vim.cmd "Copilot enable"
+          print "Copilot enabled"
+        end
+        vim.g.copilot_enabled = not vim.g.copilot_enabled
+      end,
+      "Toggle Copilot",
     },
   },
   t = {
