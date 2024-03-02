@@ -65,6 +65,7 @@ nvim
 - marksman
 - pyright
 - ruby-lsp
+- taplo
 - terraform-ls
 - tflint
 - typescript-language-server
@@ -82,6 +83,7 @@ nvim
 - rubocop
 - shfmt
 - stylua
+- taplo
 - terraform_fmt
 - yamlfmt
 

@@ -25,6 +25,11 @@ for _, lsp in ipairs(default_lsps) do
   }
 end
 
+lspconfig.taplo.setup {
+  on_attach = require("custom.configs.utils").format_on_save,
+  capabilities = capabilities,
+}
+
 lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
