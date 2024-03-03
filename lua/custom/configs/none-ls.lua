@@ -17,6 +17,16 @@ local opts = {
     null_ls.builtins.formatting.goimports,
     null_ls.builtins.formatting.isort,
     null_ls.builtins.formatting.prettier.with {
+      filetypes = {
+        "typescript",
+        "typescriptreact",
+        "css",
+        "scss",
+        "html",
+        "json",
+        "markdown",
+        "graphql",
+      },
       extra_args = {
         "--config",
         vim.fn.expand "~/.config/nvim/configs/prettier.yaml",
