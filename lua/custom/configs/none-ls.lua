@@ -1,4 +1,5 @@
 local null_ls = require "null-ls"
+local format_on_save = require("custom.configs.utils").format_on_save
 
 local opts = {
   sources = {
@@ -47,7 +48,7 @@ local opts = {
     null_ls.builtins.formatting.terraform_fmt,
     null_ls.builtins.formatting.yamlfmt,
   },
-  on_attach = require("custom.configs.utils").format_on_save,
+  on_attach = format_on_save,
 }
 
 return opts

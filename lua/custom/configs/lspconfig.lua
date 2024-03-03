@@ -1,8 +1,5 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
-
 -- LSPs without configuration
-local default_lsps = {
+local default_servers = {
   "bashls",
   "clangd",
   "cssls",
@@ -17,16 +14,20 @@ local default_lsps = {
 }
 
 local lspconfig = require "lspconfig"
+local on_attach = require("plugins.configs.lspconfig").on_attach
+local capabilities = require("plugins.configs.lspconfig").capabilities
 
-for _, lsp in ipairs(default_lsps) do
+for _, lsp in ipairs(default_servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
 end
 
+local format_on_save = require("custom.configs.utils").format_on_save
+
 lspconfig.taplo.setup {
-  on_attach = require("custom.configs.utils").format_on_save,
+  on_attach = lspconfig.util.add_hook_after(on_attach, format_on_save),
   capabilities = capabilities,
 }
 
