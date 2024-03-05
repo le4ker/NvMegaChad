@@ -15,6 +15,7 @@ return {
       "html-lsp",
       "isort",
       "stylua",
+      "taplo",
       "terraform-ls",
       "tflint",
       "typescript-language-server",
