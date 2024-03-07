@@ -17,7 +17,6 @@ LSPs, formatters, linters and debuggers, Github Copilot and Markdown preview.
 - [Neovim 0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.0)
 - [Nerd Font](https://www.nerdfonts.com/)
 - [Ripgrep](https://github.com/BurntSushi/ripgrep)
-- [Glow](https://github.com/charmbracelet/glow)
 - [Terraform](https://www.terraform.io/)
 
 ## Preview
