@@ -66,7 +66,6 @@ nvim
 - ruby-lsp
 - taplo
 - terraform-ls
-- tflint
 - typescript-language-server
 - vim-language-server
 - yaml-language-server
