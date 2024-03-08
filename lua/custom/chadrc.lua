@@ -16,17 +16,20 @@ end
 
 M.ui = {
   theme = "everforest_light",
+  tabufline = {
+    overriden_modules = function(modules)
+      table.remove(modules, 4)
+    end,
+  },
   statusline = {
-    theme = "default",
     separator_style = "block",
     overriden_modules = function(modules)
       modules[8] = LSP_status() or ""
     end,
   },
 }
+
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
-
-vim.g.toggle_theme_icon = ""
 
 return M
