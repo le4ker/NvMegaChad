@@ -33,6 +33,7 @@ M.disabled = {
     ["<A-i>"] = "",
     ["<A-h>"] = "",
     ["<A-v>"] = "",
+    ["<leader>v"] = "",
     ["<leader>wK"] = "",
     ["<leader>wk"] = "",
     ["<leader>cc"] = "",
