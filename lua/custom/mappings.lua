@@ -55,6 +55,7 @@ M.general = {
     ["<C-f>"] = { "<C-f>zz", "Move one page down", opts = { noremap = true } },
     ["<C-b>"] = { "<C-b>zz", "Move one page up", opts = { noremap = true } },
     ["<leader>s"] = { "<cmd> w <CR>", "Save file" },
+    ["<leader>v"] = { "<cmd> vsplit <CR>", "Vertical split" },
     ["<leader>lu"] = { "<cmd> Lazy update <CR>", "Update plugins" },
     ["<leader>pr"] = { "<cmd> MarkdownPreviewToggle <CR>", "Preview Markdown file" },
     ["<leader>fmt"] = {
