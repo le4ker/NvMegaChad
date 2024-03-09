@@ -76,12 +76,10 @@ nvim
 - clang-format
 - gofmt
 - isort
-- markdownlint
 - prettier
 - rubocop
 - shfmt
 - stylua
-- taplo
 - terraform_fmt
 - yamlfmt
 
