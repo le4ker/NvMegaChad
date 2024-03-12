@@ -9,8 +9,13 @@
 </p>
 
 [Neovim](https://neovim.io/) configuration, based on the
-[NvChad](https://nvchad.com/) distribution. It has preconfigured a wide range of
-LSPs, formatters, linters and debuggers, Github Copilot and Markdown preview.
+[NvChad](https://nvchad.com/) distribution. It takes a more minimal approach
+when it comes to UI elements and keymappings, while it offers a wide range of
+preconfigured LSPs, formatters, linters and debuggers and adds support for
+Github Copilot and Markdown preview.
+
+Languages supported: Go, Python, C/C++, Lua, Ruby, HTML/CSS/Typescript, YAML,
+Bash, Terraform, TOML, Vimscript.
 
 ## Requirements
 
