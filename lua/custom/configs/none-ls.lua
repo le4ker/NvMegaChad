@@ -19,16 +19,17 @@ local opts = {
     null_ls.builtins.formatting.isort,
     null_ls.builtins.formatting.prettier.with {
       filetypes = {
+        "css",
+        "graphql",
+        "html",
         "javascript",
         "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "css",
-        "scss",
-        "html",
         "json",
         "markdown",
-        "graphql",
+        "scss",
+        "typescript",
+        "typescriptreact",
+        "yaml",
       },
       extra_args = {
         "--config",
@@ -41,7 +42,6 @@ local opts = {
     },
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.terraform_fmt,
-    null_ls.builtins.formatting.yamlfmt,
   },
   on_attach = format_on_save,
 }

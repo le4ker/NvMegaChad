@@ -86,7 +86,6 @@ nvim
 - shfmt
 - stylua
 - terraform_fmt
-- yamlfmt
 
 ## Linters
 

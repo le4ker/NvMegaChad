@@ -29,7 +29,6 @@ return {
       "ruby-lsp",
       "shfmt",
       "vim-language-server",
-      "yamlfmt",
       "yaml-language-server",
     },
   },
