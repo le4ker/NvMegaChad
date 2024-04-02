@@ -15,7 +15,7 @@ local function LSP_status()
 end
 
 M.ui = {
-  theme = "everforest_light",
+  theme = "everforest",
   tabufline = {
     overriden_modules = function(modules)
       table.remove(modules, 4)
