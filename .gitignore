@@ -1,8 +1,1 @@
-plugin
-spell
-ftplugin
-syntax
-coc-settings.json
-.luarc.json
-after
 **/.DS_Store

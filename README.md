@@ -50,55 +50,54 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 ```
 
-Install config:
+Download the config and install the dependencies:
 
 ```sh
-git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim/
-nvim
+git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim && nvim
 ```
 
 ## Language Servers
 
-- bash-language-server
-- clangd
-- css-lsp
-- dockerfile-language-server
-- gopls
-- html-lsp
-- lua-language-server
-- marksman
-- pyright
-- ruby-lsp
-- taplo
-- terraform-ls
-- typescript-language-server
-- vim-language-server
-- yaml-language-server
+- [bash-language-server](https://github.com/bash-lsp/bash-language-server)
+- [clangd](https://clangd.llvm.org)
+- [css-lsp](https://github.com/microsoft/vscode-css-languageservice)
+- [dockerfile-language-server](https://github.com/rcjsuen/dockerfile-language-server-nodejs)
+- [gopls](https://pkg.go.dev/golang.org/x/tools/gopls)
+- [html-lsp](https://github.com/microsoft/vscode-html-languageservice)
+- [lua-language-server](https://github.com/LuaLS/lua-language-server)
+- [marksman](https://github.com/artempyanykh/marksman)
+- [pyright](https://github.com/microsoft/pyright)
+- [ruby-lsp](https://github.com/Shopify/ruby-lsp)
+- [taplo](https://taplo.tamasfe.dev/)
+- [terraform-ls](https://github.com/hashicorp/terraform-ls)
+- [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
+- [vim-language-server](https://github.com/iamcco/vim-language-server)
+- [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)
 
 ## Formatters
 
-- black
-- clang-format
-- gofmt
-- isort
-- prettier
-- rubocop
-- shfmt
-- stylua
-- terraform_fmt
+- [black](https://github.com/psf/black)
+- [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
+- [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [isort](https://github.com/PyCQA/isort)
+- [prettier](https://github.com/prettier/prettier)
+- [rubocop](https://github.com/rubocop/rubocop)
+- [shfmt](https://github.com/mvdan/sh)
+- [stylua](https://github.com/JohnnyMorganz/StyLua)
+- [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)
 
 ## Linters
 
-- golangci-lint
-- markdownlint
-- pylint
-- rubocop
-- tflint
+- [golangci-lint](https://golangci-lint.run/)
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+- [pylint](https://pylint.org/)
+- [rubocop](https://github.com/rubocop/rubocop)
+- [tflint](https://github.com/terraform-linters/tflint)
 
 ## Debuggers
 
-- delve
-- debugpy
+- [delve](https://github.com/go-delve/delve)
+- [debugpy](https://github.com/microsoft/debugpy)
 
 ## Fetching upstream changes
 

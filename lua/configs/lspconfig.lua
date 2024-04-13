@@ -6,7 +6,8 @@ local default_servers = {
   "dockerls",
   "html",
   "marksman",
-  "ruby_ls",
+  "ruby_lsp",
+  "taplo",
   "terraformls",
   "tflint",
   "tsserver",
@@ -14,22 +15,16 @@ local default_servers = {
 }
 
 local lspconfig = require "lspconfig"
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+local on_attach = require("nvchad.configs.lspconfig").on_attach
+local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 for _, lsp in ipairs(default_servers) do
+  ---@diagnostic disable-next-line: undefined-field
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
 end
-
-local format_on_save = require("custom.configs.utils").format_on_save
-
-lspconfig.taplo.setup {
-  on_attach = lspconfig.util.add_hook_after(on_attach, format_on_save),
-  capabilities = capabilities,
-}
 
 lspconfig.gopls.setup {
   on_attach = on_attach,
