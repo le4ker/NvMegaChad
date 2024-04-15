@@ -74,7 +74,6 @@ map("n", "<C-l>", "<C-w>l", { desc = "General Switch Window right" })
 map("n", "<C-j>", "<C-w>j", { desc = "General Switch Window down" })
 map("n", "<C-k>", "<C-w>k", { desc = "General Switch Window up" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General File Copy whole" })
-
 map("n", "<S-u>", "<C-r>", { desc = "General Redo" })
 map("n", "<C-d>", "<C-d>zz", { desc = "General Move half page down and center" })
 map("n", "<C-u>", "<C-u>zz", { desc = "General Move half page up and center" })
@@ -85,6 +84,14 @@ map("n", "<leader>v", "<cmd> vsplit <CR>", { desc = "General Vertical split" })
 map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy plugins" })
 map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown File" })
 map("i", "jk", "<ESC>", { desc = "General Escape with jk" })
+map("n", "<leader>fmt", function()
+  vim.g.format_on_save = not vim.g.format_on_save
+  if vim.g.format_on_save then
+    print "Format on save enabled"
+  else
+    print "Format on save disabled"
+  end
+end, { desc = "General Toggle format on save" })
 
 -- DAP
 map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "DAP Add breakpoint at line" })

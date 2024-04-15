@@ -10,4 +10,5 @@ opt.list = true
 opt.listchars = "tab:➝ ,lead:·,space:·,trail:·,nbsp:+,eol:¬"
 
 -- feature toggles
+vim.g.format_on_save = true
 vim.g.copilot_enabled = true

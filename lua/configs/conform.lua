@@ -22,12 +22,19 @@ local options = {
     yaml = { "prettier" },
     zsh = { "shfmt" },
   },
-
-  format_on_save = {
-    lsp_fallback = true,
-    async = false,
-    timeout_ms = 500,
-  },
 }
 
-require("conform").setup(options)
+local conform = require "conform"
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function(args)
+    if not vim.g.format_on_save then
+      return
+    end
+
+    conform.format { bufnr = args.buf }
+  end,
+})
+
+conform.setup(options)
