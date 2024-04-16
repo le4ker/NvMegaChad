@@ -83,7 +83,7 @@ map("n", "<leader>s", "<cmd> w <CR>", { desc = "General Save file" })
 map("n", "<leader>v", "<cmd> vsplit <CR>", { desc = "General Vertical split" })
 map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy plugins" })
 map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown File" })
-map("i", "jk", "<ESC>", { desc = "General Escape with jk" })
+map("i", "jk", "<ESC>", { desc = "General Escape insert mode" })
 map("n", "<leader>fmt", function()
   vim.g.format_on_save = not vim.g.format_on_save
   if vim.g.format_on_save then
