@@ -50,7 +50,7 @@ map(
 )
 
 -- Terminal
-map("t", "<C-x>", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
+map("t", "jk", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.3 }
 end, { desc = "Terminal New horizontal term" })
