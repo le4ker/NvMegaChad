@@ -5,7 +5,7 @@
 ![lazy](https://dotfyle.com/le4ker/nvmegachad/badges/plugin-manager)
 
 <p align="center">
-  <img src=".github/img/megaman.jpeg" alt="megaman" />
+  <img src=".github/images/megaman.jpeg" alt="megaman" />
 </p>
 
 [Neovim](https://neovim.io/) configuration, based on the
@@ -103,28 +103,28 @@ git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim && nvim
 
 ### Editor
 
-![editor](.github/img/editor.png)
+![editor](.github/images/editor.png)
 
 ### Github Copilot
 
-![copilot](.github/img/copilot.png)
+![copilot](.github/images/copilot.png)
 
 ### Search
 
-![search](.github/img/search.png)
+![search](.github/images/search.png)
 
 ### Git commits
 
-![git-commits](.github/img/git-commits.png)
+![git-commits](.github/images/git-commits.png)
 
 ### Debugger
 
-![debugger](.github/img/debugger.png)
+![debugger](.github/images/debugger.png)
 
 ### Markdown Preview
 
-![md-preview](.github/img/md-preview.png)
+![md-preview](.github/images/md-preview.png)
 
 ### Cheatsheet
 
-![cheatsheet](.github/img/cheatsheet.png)
+![cheatsheet](.github/images/cheatsheet.png)
