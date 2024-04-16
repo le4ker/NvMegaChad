@@ -20,7 +20,6 @@ M.ui = {
     order = { "treeOffset", "buffers", "tabs" },
   },
   statusline = {
-    theme = "minimal",
     separator_style = "block",
     modules = {
       lsp = lsp,
