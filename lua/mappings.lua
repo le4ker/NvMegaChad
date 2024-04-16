@@ -57,7 +57,7 @@ end, { desc = "Terminal New horizontal term" })
 map("t", "<ESC>", function()
   local win = vim.api.nvim_get_current_win()
   vim.api.nvim_win_close(win, true)
-end, { desc = "Terminal Close term in terminal mode" })
+end, { desc = "Terminal Close terminal" })
 
 -- NvChad
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "NvChad Toggle NvCheatsheet" })
@@ -82,7 +82,7 @@ map("n", "<C-b>", "<C-b>zz", { desc = "General Move half up and center" })
 map("n", "<leader>s", "<cmd> w <CR>", { desc = "General Save file" })
 map("n", "<leader>v", "<cmd> vsplit <CR>", { desc = "General Vertical split" })
 map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy plugins" })
-map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown File" })
+map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown file" })
 map("i", "jk", "<ESC>", { desc = "General Escape insert mode" })
 map("n", "<leader>fmt", function()
   vim.g.format_on_save = not vim.g.format_on_save

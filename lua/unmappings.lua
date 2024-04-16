@@ -1,0 +1,16 @@
+local unmap = vim.keymap.del
+
+unmap({ "s", "i" }, "<Plug>luasnip-jump-prev")
+unmap({ "s", "i" }, "<Plug>luasnip-jump-next")
+unmap({ "s", "i" }, "<Plug>luasnip-prev-choice")
+unmap({ "s", "i" }, "<Plug>luasnip-next-choice")
+unmap({ "s", "i" }, "<Plug>luasnip-expand-snippet")
+unmap({ "s", "i" }, "<Plug>luasnip-expand-or-jump")
+unmap("!", "<Plug>luasnip-expand-repeat")
+unmap("!", "<Plug>luasnip-delete-check")
+unmap("", "<Plug>luasnip-expand-repeat")
+unmap({ "n", "x" }, "gc")
+unmap({ "n", "x" }, "gb")
+unmap("n", "gcc")
+unmap("n", "gbc")
+unmap("n", "gbc")
