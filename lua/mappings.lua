@@ -50,14 +50,16 @@ map(
 )
 
 -- Terminal
-map("t", "jk", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
-map("n", "<leader>h", function()
-  require("nvchad.term").new { pos = "sp", size = 0.3 }
-end, { desc = "Terminal New horizontal term" })
-map("t", "<ESC>", function()
+local function close_terminal()
   local win = vim.api.nvim_get_current_win()
   vim.api.nvim_win_close(win, true)
-end, { desc = "Terminal Close terminal" })
+end
+
+map("t", "jk", close_terminal, { desc = "Terminal Close terminal" })
+map("t", "<ESC>", close_terminal, { desc = "Terminal Close terminal" })
+map("n", "<leader>h", function()
+  require("nvchad.term").new { pos = "sp", size = 0.5 }
+end, { desc = "Terminal New horizontal terminal" })
 
 -- NvChad
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "NvChad Toggle NvCheatsheet" })
