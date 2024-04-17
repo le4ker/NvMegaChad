@@ -53,7 +53,10 @@ rm -rf ~/.local/share/nvim
 Download the config and install the dependencies:
 
 ```sh
-git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim && nvim
+git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim
+cd ~/.config/nvim
+make install # works only on macos
+nvim
 ```
 
 ## Language Servers
