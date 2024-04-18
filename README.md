@@ -24,6 +24,8 @@ HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript.
 - [Ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Terraform](https://www.terraform.io/)
 
+Can be installed in macos by running `make install`
+
 ## Preview
 
 > Install requires Neovim 0.9+. Always review the code before installing a
