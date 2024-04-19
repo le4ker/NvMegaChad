@@ -15,7 +15,7 @@ preconfigured LSPs, formatters, linters and debuggers and adds support for
 Github Copilot and Markdown preview.
 
 Languages supported: Go, Python, C/C++, Lua, Ruby,
-HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript.
+HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
 
 ## Requirements
 
@@ -88,6 +88,7 @@ nvim
 - [prettier](https://github.com/prettier/prettier)
 - [rubocop](https://github.com/rubocop/rubocop)
 - [shfmt](https://github.com/mvdan/sh)
+- [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)
 

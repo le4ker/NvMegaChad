@@ -28,6 +28,7 @@ return {
       "rubocop",
       "ruby-lsp",
       "shfmt",
+      "sql-formatter",
       "vim-language-server",
       "yaml-language-server",
     },

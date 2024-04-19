@@ -14,6 +14,7 @@ local options = {
     python = { "isort", "black" },
     scss = { "prettier" },
     sh = { "shfmt" },
+    sql = { "sql_formatter" },
     ruby = { "rubocop" },
     terraform = { "terraform_fmt" },
     toml = { "taplo" },
