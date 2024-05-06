@@ -10,8 +10,8 @@
 
 [Neovim](https://neovim.io/) configuration, based on the
 [NvChad](https://nvchad.com/) distribution. It takes a more minimal approach
-when it comes to UI elements and keymappings, while it offers a wide range of
-preconfigured LSPs, formatters, linters and debuggers and adds support for
+when it comes to UI elements and key mappings, while it offers a wide range of
+preconfigured LSPs, formatters, linters and debuggers,while adding support for
 Github Copilot and Markdown preview.
 
 Languages supported: Go, Python, C/C++, Lua, Ruby,
@@ -24,7 +24,7 @@ HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
 - [Ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Terraform](https://www.terraform.io/)
 
-Can be installed in macos by running `make install`
+Can be installed in macOS by running `make install`
 
 ## Preview
 
@@ -35,11 +35,7 @@ Clone the repository and install the plugins:
 
 ```sh
 git clone git@github.com:le4ker/NvMegaChad ~/.config/le4ker/NvMegaChad
-```
-
-Open Neovim with this config:
-
-```sh
+make install # works only on macOS
 NVIM_APPNAME=le4ker/NvMegaChad/ nvim
 ```
 
@@ -56,7 +52,6 @@ Download the config and install the dependencies:
 
 ```sh
 git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim
-cd ~/.config/nvim
 make install # works only on macOS
 nvim
 ```
