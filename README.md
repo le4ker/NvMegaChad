@@ -11,7 +11,7 @@
 [Neovim](https://neovim.io/) configuration, based on the
 [NvChad](https://nvchad.com/) distribution. It takes a more minimal approach
 when it comes to UI elements and key mappings, while it offers a wide range of
-preconfigured LSPs, formatters, linters and debuggers,while adding support for
+preconfigured LSPs, formatters, linters and debuggers, and adds support for
 Github Copilot and Markdown preview.
 
 Languages supported: Go, Python, C/C++, Lua, Ruby,
