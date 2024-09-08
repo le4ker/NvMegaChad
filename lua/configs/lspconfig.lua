@@ -10,7 +10,7 @@ local default_servers = {
   "taplo",
   "terraformls",
   "tflint",
-  "tsserver",
+  "ts_ls",
   "vimls",
 }
 
