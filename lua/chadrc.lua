@@ -15,7 +15,6 @@ local function lsp()
 end
 
 M.ui = {
-  theme = "everforest_light",
   tabufline = {
     order = { "treeOffset", "buffers", "tabs" },
   },
@@ -25,6 +24,10 @@ M.ui = {
       lsp = lsp,
     },
   },
+}
+
+M.base46 = {
+  theme = "everforest_light",
 }
 
 return M
