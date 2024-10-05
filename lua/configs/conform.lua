@@ -1,7 +1,7 @@
 local options = {
   formatters_by_ft = {
-    c = { "clangd-format" },
-    cpp = { "clangd-format" },
+    c = { "clang-format" },
+    cpp = { "clang-format" },
     css = { "prettier" },
     go = { "goimports", "gofmt" },
     graphql = { "prettier" },
