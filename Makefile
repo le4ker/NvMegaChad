@@ -1,7 +1,6 @@
 install:
 	# fonts
-	brew tap homebrew/cask-fonts
-	brew install font-hack-nerd-font	
+	brew install font-hack-nerd-font
 	# ripgrep
 	brew install ripgrep
 	# terraform
