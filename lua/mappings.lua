@@ -55,7 +55,6 @@ local function close_terminal()
   vim.api.nvim_win_close(win, true)
 end
 
-map("t", "jk", close_terminal, { desc = "Terminal Close terminal" })
 map("t", "<ESC>", close_terminal, { desc = "Terminal Close terminal" })
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
@@ -85,7 +84,6 @@ map("n", "<leader>s", "<cmd> w <CR>", { desc = "General Save file" })
 map("n", "<leader>v", "<cmd> vsplit <CR>", { desc = "General Vertical split" })
 map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy plugins" })
 map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown file" })
-map("i", "jk", "<ESC>", { desc = "General Escape insert mode" })
 map("n", "<leader>fmt", function()
   vim.g.format_on_save = not vim.g.format_on_save
   if vim.g.format_on_save then
