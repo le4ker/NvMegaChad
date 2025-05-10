@@ -12,7 +12,7 @@
 [NvChad](https://nvchad.com/) distribution. It takes a more minimal approach
 when it comes to UI elements and key mappings, while it offers a wide range of
 preconfigured LSPs, formatters, linters and debuggers, and adds support for
-Github Copilot and Markdown preview.
+Markdown preview.
 
 Languages supported: Go, Python, C/C++, Lua, Ruby,
 HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
@@ -106,10 +106,6 @@ nvim
 ### Editor
 
 ![editor](.github/images/editor.png)
-
-### Github Copilot
-
-![copilot](.github/images/copilot.png)
 
 ### Search
 

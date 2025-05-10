@@ -108,15 +108,3 @@ end, { desc = "DAP Debug last Go test" })
 map("n", "<leader>dpt", function()
   require("dap-python").test_method()
 end, { desc = "DAP Debug Python test" })
-
--- Copilot
-map("n", "<leader>cp", function()
-  if vim.g.copilot_enabled then
-    vim.cmd "Copilot disable"
-    print "Copilot disabled"
-  else
-    vim.cmd "Copilot enable"
-    print "Copilot enabled"
-  end
-  vim.g.copilot_enabled = not vim.g.copilot_enabled
-end, { desc = "General Toggle Copilot" })
