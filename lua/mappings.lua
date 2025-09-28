@@ -4,6 +4,14 @@ local map = vim.keymap.set
 map("n", "[d", vim.diagnostic.goto_prev, { desc = "LSP Go to previous diagnostic" })
 map("n", "]d", vim.diagnostic.goto_next, { desc = "LSP Go to next diagnostic" })
 
+-- Trouble
+map("n", "<leader>xx", "<cmd>TroubleToggle<CR>", { desc = "Trouble Toggle" })
+map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", { desc = "Trouble Toggle workspace diagnostics" })
+map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>", { desc = "Trouble Toggle document diagnostics" })
+map("n", "<leader>xl", "<cmd>TroubleToggle loclist<CR>", { desc = "Trouble Toggle loclist" })
+map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<CR>", { desc = "Trouble Toggle quickfix" })
+map("n", "gR", "<cmd>TroubleToggle lsp_references<CR>", { desc = "Trouble Toggle LSP references" })
+
 -- tabufline
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
 
