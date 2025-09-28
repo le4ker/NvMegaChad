@@ -3,7 +3,7 @@ local M = {}
 
 local function lsp()
   if rawget(vim, "lsp") then
-    for _, client in ipairs(vim.lsp.get_active_clients()) do
+    for _, client in ipairs(vim.lsp.get_clients()) do
       local stbufnr = vim.api.nvim_win_get_buf(vim.g.statusline_winid)
 
       -- ignore copilot

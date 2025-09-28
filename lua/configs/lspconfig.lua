@@ -14,19 +14,17 @@ local default_servers = {
   "vimls",
 }
 
-local lspconfig = require "lspconfig"
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
-for _, lsp in ipairs(default_servers) do
-  ---@diagnostic disable-next-line: undefined-field
-  lspconfig[lsp].setup {
+for _, server in ipairs(default_servers) do
+  vim.lsp.config(server, {
     on_attach = on_attach,
     capabilities = capabilities,
-  }
+  })
 end
 
-lspconfig.gopls.setup {
+vim.lsp.config("gopls", {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -38,9 +36,9 @@ lspconfig.gopls.setup {
       },
     },
   },
-}
+})
 
-lspconfig.pyright.setup {
+vim.lsp.config("pyright", {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -56,7 +54,7 @@ lspconfig.pyright.setup {
     },
   },
   before_init = function(_, config)
-    local util = require("lspconfig.util")
+    local util = require "lspconfig.util"
     local poetry_root = util.root_pattern("poetry.lock", "pyproject.toml")(config.root_dir)
     if poetry_root then
       local result = vim.fn.system("cd " .. poetry_root .. " && poetry env info -p 2>/dev/null")
@@ -68,9 +66,9 @@ lspconfig.pyright.setup {
       end
     end
   end,
-}
+})
 
-lspconfig.yamlls.setup {
+vim.lsp.config("yamlls", {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -86,4 +84,4 @@ lspconfig.yamlls.setup {
       },
     },
   },
-}
+})
