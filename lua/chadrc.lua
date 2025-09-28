@@ -27,7 +27,7 @@ M.ui = {
 }
 
 M.base46 = {
-  theme = "everforest_light",
+  theme = "flex-light",
 }
 
 return M
