@@ -20,11 +20,11 @@ HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
 ## Requirements
 
 - [Neovim 0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.0)
-- [Nerd Font](https://www.nerdfonts.com/)
+- [Nerd Font](https://www.nerdfonts.com/) (Hack Nerd Font recommended)
 - [Ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Terraform](https://www.terraform.io/)
 
-Can be installed in macOS by running `make install`
+Can be installed by running `make install`
 
 ## Preview
 
@@ -35,7 +35,7 @@ Clone the repository and install the plugins:
 
 ```sh
 git clone git@github.com:le4ker/NvMegaChad ~/.config/le4ker/NvMegaChad
-make install # works only on macOS
+make install
 NVIM_APPNAME=le4ker/NvMegaChad/ nvim
 ```
 
@@ -53,7 +53,7 @@ Download the config and install the dependencies:
 ```sh
 git clone https://github.com/le4ker/NvMegaChad ~/.config/nvim
 cd ~/.config/nvim
-make install # works only on macOS
+make install
 nvim
 ```
 
