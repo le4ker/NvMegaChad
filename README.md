@@ -19,7 +19,7 @@ HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
 
 ## Requirements
 
-- [Neovim 0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.0)
+- [Neovim 0.11.0](https://github.com/neovim/neovim/releases/tag/v0.11.0)
 - [Nerd Font](https://www.nerdfonts.com/) (Hack Nerd Font recommended)
 - [Ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Terraform](https://www.terraform.io/)

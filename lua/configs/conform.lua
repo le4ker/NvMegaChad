@@ -19,7 +19,7 @@ local options = {
     terraform = { "terraform_fmt" },
     toml = { "taplo" },
     typescript = { "prettier" },
-    typercriptreact = { "prettier" },
+    typescriptreact = { "prettier" },
     yaml = { "prettier" },
     zsh = { "shfmt" },
   },
