@@ -24,6 +24,9 @@ for _, server in ipairs(default_servers) do
   })
 end
 
+-- Enable all configured servers
+vim.lsp.enable(default_servers)
+
 vim.lsp.config("gopls", {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -85,3 +88,6 @@ vim.lsp.config("yamlls", {
     },
   },
 })
+
+-- Enable gopls, pyright, and yamlls
+vim.lsp.enable { "gopls", "pyright", "yamlls" }
