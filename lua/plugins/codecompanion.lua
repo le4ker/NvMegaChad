@@ -7,10 +7,11 @@ return {
   opts = {
     -- Configure Claude (Anthropic)
     -- Make sure ANTHROPIC_API_KEY is set in your environment
-    adapters = {
-      http = {
-        anthropic = {
-          model = "claude-3-5-sonnet-20241022",
+    strategies = {
+      chat = {
+        adapter = {
+          name = "anthropic",
+          model = "claude-sonnet-4-20250514",
         },
       },
     },
