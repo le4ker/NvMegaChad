@@ -28,7 +28,7 @@ Can be installed by running `make install`
 
 ## Preview
 
-> Install requires Neovim 0.9+. Always review the code before installing a
+> Install requires Neovim 0.11+. Always review the code before installing a
 > configuration.
 
 Clone the repository and install the plugins:
@@ -56,6 +56,10 @@ cd ~/.config/nvim
 make install
 nvim
 ```
+
+## AI
+
+- [codecompanion](https://github.com/olimorris/codecompanion.nvim)
 
 ## Language Servers
 
@@ -122,6 +126,10 @@ nvim
 ### Markdown Preview
 
 ![md-preview](.github/images/md-preview.png)
+
+### AI
+
+![ai](.github/images/ai.png)
 
 ### Cheatsheet
 
