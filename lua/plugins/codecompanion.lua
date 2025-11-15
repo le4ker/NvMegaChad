@@ -13,7 +13,7 @@ return {
           model = "claude-sonnet-4-20250514",
         },
         roles = {
-          user = "NvMegaChad",
+          user = "NvMegaChad Companion",
         },
       },
     },
