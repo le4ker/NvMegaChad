@@ -26,6 +26,5 @@ return {
   },
   keys = {
     { "<leader>cc", "<cmd>CodeCompanionChat<CR>", desc = "CodeCompanion Chat" },
-    { "<leader>ci", "<cmd>CodeCompanionInline<CR>", desc = "CodeCompanion Inline" },
   },
 }
