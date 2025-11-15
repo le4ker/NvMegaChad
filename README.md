@@ -17,6 +17,36 @@ Markdown preview.
 Languages supported: Go, Python, C/C++, Lua, Ruby,
 HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
 
+## Screenshots
+
+### AI Companion
+
+![ai](.github/images/ai.png)
+
+### Editor
+
+![editor](.github/images/editor.png)
+
+### Search
+
+![search](.github/images/search.png)
+
+### Git commits
+
+![git-commits](.github/images/git-commits.png)
+
+### Debugger
+
+![debugger](.github/images/debugger.png)
+
+### Markdown Preview
+
+![md-preview](.github/images/md-preview.png)
+
+### Cheatsheet
+
+![cheatsheet](.github/images/cheatsheet.png)
+
 ## Requirements
 
 - [Neovim 0.11.0](https://github.com/neovim/neovim/releases/tag/v0.11.0)
@@ -56,10 +86,6 @@ cd ~/.config/nvim
 make install
 nvim
 ```
-
-## AI
-
-- [codecompanion](https://github.com/olimorris/codecompanion.nvim)
 
 ## Language Servers
 
@@ -105,32 +131,6 @@ nvim
 - [delve](https://github.com/go-delve/delve)
 - [debugpy](https://github.com/microsoft/debugpy)
 
-## Screenshots
+## AI
 
-### Editor
-
-![editor](.github/images/editor.png)
-
-### Search
-
-![search](.github/images/search.png)
-
-### Git commits
-
-![git-commits](.github/images/git-commits.png)
-
-### Debugger
-
-![debugger](.github/images/debugger.png)
-
-### Markdown Preview
-
-![md-preview](.github/images/md-preview.png)
-
-### AI
-
-![ai](.github/images/ai.png)
-
-### Cheatsheet
-
-![cheatsheet](.github/images/cheatsheet.png)
+- [codecompanion](https://github.com/olimorris/codecompanion.nvim)
