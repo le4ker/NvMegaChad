@@ -5,13 +5,15 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
   opts = {
-    -- Configure Claude (Anthropic)
-    -- Make sure ANTHROPIC_API_KEY is set in your environment
     strategies = {
       chat = {
         adapter = {
+          -- ANTHROPIC_API_KEY must be set in your environment
           name = "anthropic",
           model = "claude-sonnet-4-20250514",
+        },
+        roles = {
+          user = "NvMegaChad",
         },
       },
     },
@@ -21,4 +23,3 @@ return {
     { "<leader>ci", "<cmd>CodeCompanionInline<CR>", desc = "CodeCompanion Inline" },
   },
 }
-
