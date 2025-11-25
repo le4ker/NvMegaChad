@@ -33,6 +33,7 @@ return {
       "terraform",
       "toml",
       "tsx",
+      "typescript",
       "vim",
       "xml",
       "yaml",
