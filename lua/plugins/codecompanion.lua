@@ -10,7 +10,7 @@ return {
         adapter = {
           -- ANTHROPIC_API_KEY must be set in your environment
           name = "anthropic",
-          model = "claude-sonnet-4-20250514",
+          model = "claude-opus-4-5-20251101",
         },
         roles = {
           user = "NvMegaChad Companion",
