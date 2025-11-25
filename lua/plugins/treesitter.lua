@@ -37,6 +37,6 @@ return {
       "xml",
       "yaml",
     },
-    auto_install = "true",
+    auto_install = true,
   },
 }
