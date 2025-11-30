@@ -7,8 +7,8 @@ return {
 
     -- Ensure all listed tools are installed
     for _, tool in ipairs(ensure_installed) do
-      local package = mason_registry.get_package(tool)
-      if not package:is_installed() then
+      local ok, package = pcall(mason_registry.get_package, tool)
+      if ok and not package:is_installed() then
         package:install()
       end
     end
