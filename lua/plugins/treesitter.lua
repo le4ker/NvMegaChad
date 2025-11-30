@@ -24,6 +24,7 @@ return {
       "lua",
       "make",
       "markdown",
+      "markdown_inline",
       "mermaid",
       "python",
       "ruby",
