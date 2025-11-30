@@ -15,7 +15,8 @@ preconfigured LSPs, formatters, linters and debuggers, and adds support for
 Markdown preview.
 
 Languages supported: Go, Python, C/C++, Lua, Ruby,
-HTML/CSS/Javascript/Typescript, YAML, Bash, Terraform, TOML, Vimscript, SQL
+HTML/CSS/SCSS/Javascript/Typescript, JSON, GraphQL, YAML, Markdown, Bash,
+Dockerfile, Terraform, TOML, Vimscript, SQL
 
 ## Screenshots
 
@@ -101,6 +102,7 @@ nvim
 - [ruby-lsp](https://github.com/Shopify/ruby-lsp)
 - [taplo](https://taplo.tamasfe.dev/)
 - [terraform-ls](https://github.com/hashicorp/terraform-ls)
+- [tflint](https://github.com/terraform-linters/tflint)
 - [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
 - [vim-language-server](https://github.com/iamcco/vim-language-server)
 - [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)
@@ -110,12 +112,14 @@ nvim
 - [black](https://github.com/psf/black)
 - [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
 - [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports)
 - [isort](https://github.com/PyCQA/isort)
 - [prettier](https://github.com/prettier/prettier)
 - [rubocop](https://github.com/rubocop/rubocop)
 - [shfmt](https://github.com/mvdan/sh)
 - [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
+- [taplo](https://taplo.tamasfe.dev/)
 - [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)
 
 ## Linters
