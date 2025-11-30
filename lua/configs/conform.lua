@@ -34,7 +34,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
       return
     end
 
-    conform.format { bufnr = args.buf }
+    conform.format { bufnr = args.buf, lsp_fallback = true }
   end,
 })
 
