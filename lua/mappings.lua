@@ -113,6 +113,7 @@ end, { desc = "DAP Debug Python test" })
 
 -- LSP
 map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Go to definition" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "LSP Go to implementation" })
 map("n", "gr", vim.lsp.buf.references, { desc = "LSP References" })
 map("n", "K", vim.lsp.buf.hover, { desc = "LSP Hover" })
 map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP Rename" })
