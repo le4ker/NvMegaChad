@@ -91,7 +91,7 @@ map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy p
 map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown file" })
 map("n", "<leader>tf", function()
   vim.g.format_on_save = not vim.g.format_on_save
-  print(vim.g.format_on_save and "Format on save enabled" or "Format on save disabled")
+vim.notify(vim.g.format_on_save and "Format on save enabled" or "Format on save disabled")
 end, { desc = "General Toggle format on save" })
 
 -- DAP
