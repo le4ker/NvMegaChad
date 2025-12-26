@@ -112,6 +112,7 @@ map("n", "<leader>dpt", function()
 end, { desc = "DAP Debug Python test" })
 
 -- LSP
+map("n", "gD", vim.lsp.buf.declaration, { desc = "LSP Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Go to definition" })
 map("n", "gi", vim.lsp.buf.implementation, { desc = "LSP Go to implementation" })
 map("n", "gr", vim.lsp.buf.references, { desc = "LSP References" })
