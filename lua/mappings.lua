@@ -88,6 +88,7 @@ map("n", "<leader>s", "<cmd>w<CR>", { desc = "General Save file", silent = true 
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "General Quit", silent = true })
 map("n", "<leader>v", "<cmd>vsplit<CR>", { desc = "General Vertical Split", silent = true })
 map("n", "<leader>lu", "<cmd>Lazy update<CR>", { desc = "General Update Lazy plugins", silent = true })
+map("n", "<leader>mu", "<cmd>MasonUpdate<CR>", { desc = "General Update Mason registries", silent = true })
 map("n", "<leader>pr", "<cmd>MarkdownPreviewToggle<CR>", { desc = "General Preview Markdown file", silent = true })
 map("n", "<leader>tf", function()
   vim.g.format_on_save = not vim.g.format_on_save
