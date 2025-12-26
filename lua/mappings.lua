@@ -128,3 +128,7 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP Code action" })
 map("n", "<leader>tn", function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "General Toggle relative numbers" })
+
+-- CodeCompanion
+map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "CodeCompanion Actions", silent = true })
+map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "CodeCompanion Toggle", silent = true })
