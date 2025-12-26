@@ -25,17 +25,12 @@ local options = {
   },
 }
 
-local conform = require "conform"
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
+require("conform").setup {
+  formatters_by_ft = options.formatters_by_ft,
+  format_on_save = function()
     if not vim.g.format_on_save then
       return
     end
-
-    conform.format { bufnr = args.buf, lsp_format = "fallback" }
+    return { lsp_format = "fallback", timeout_ms = 3000 }
   end,
-})
-
-conform.setup(options)
+}

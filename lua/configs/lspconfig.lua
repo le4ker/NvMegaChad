@@ -1,5 +1,7 @@
+require("nvchad.configs.lspconfig").defaults()
+
 -- All LSP servers to enable
--- Configurations are in lua/lsp/<server>.lua
+-- Custom configurations are in lua/lsp/<server>.lua
 local servers = {
   "bashls",
   "clangd",
@@ -7,6 +9,7 @@ local servers = {
   "dockerls",
   "gopls",
   "html",
+  "lua_ls",
   "marksman",
   "pyright",
   "ruby_lsp",
@@ -17,5 +20,13 @@ local servers = {
   "vimls",
   "yamlls",
 }
+
+-- Load custom configs from lua/lsp/<server>.lua
+for _, server in ipairs(servers) do
+  local ok, custom = pcall(require, "lsp." .. server)
+  if ok then
+    vim.lsp.config(server, custom)
+  end
+end
 
 vim.lsp.enable(servers)

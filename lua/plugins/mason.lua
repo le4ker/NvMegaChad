@@ -6,12 +6,14 @@ return {
     local ensure_installed = opts.ensure_installed or {}
 
     -- Ensure all listed tools are installed
-    for _, tool in ipairs(ensure_installed) do
-      local ok, package = pcall(mason_registry.get_package, tool)
-      if ok and not package:is_installed() then
-        package:install()
+    mason_registry.refresh(function()
+      for _, tool in ipairs(ensure_installed) do
+        local ok, package = pcall(mason_registry.get_package, tool)
+        if ok and not package:is_installed() then
+          package:install()
+        end
       end
-    end
+    end)
   end,
   opts = {
     ensure_installed = {
