@@ -138,3 +138,18 @@ nvim
 ## AI
 
 - [codecompanion](https://github.com/olimorris/codecompanion.nvim)
+
+## Releases
+
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for automated versioning and changelog generation.
+
+Versions are determined automatically based on commit messages:
+
+| Commit prefix                  | Version bump | Example       |
+| ------------------------------ | ------------ | ------------- |
+| `fix:`                         | Patch        | 2.8.0 → 2.8.1 |
+| `feat:`                        | Minor        | 2.8.0 → 2.9.0 |
+| `feat!:` or `BREAKING CHANGE:` | Major        | 2.8.0 → 3.0.0 |
+| `chore:`, `docs:`, `refactor:` | No release   | -             |
+
+Every push to `main` with qualifying commits automatically creates a GitHub release with an updated changelog.
