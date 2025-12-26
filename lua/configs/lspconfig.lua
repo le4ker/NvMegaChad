@@ -1,5 +1,5 @@
 -- All LSP servers to enable
--- Configurations are in lua/lsp/<server>.lua
+-- Custom configurations are in lua/lsp/<server>.lua
 local servers = {
   "bashls",
   "clangd",
@@ -17,5 +17,13 @@ local servers = {
   "vimls",
   "yamlls",
 }
+
+-- Load custom configs from lua/lsp/<server>.lua
+for _, server in ipairs(servers) do
+  local ok, config = pcall(require, "lsp." .. server)
+  if ok then
+    vim.lsp.config(server, config)
+  end
+end
 
 vim.lsp.enable(servers)
