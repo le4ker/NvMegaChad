@@ -17,6 +17,7 @@ return {
       "graphql",
       "hcl",
       "html",
+      "htmldjango",
       "ini",
       "javascript",
       "json",
