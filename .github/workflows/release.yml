@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/git
+      - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/git conventional-changelog-conventionalcommits
 
       - run: semantic-release
         env:
