@@ -110,6 +110,9 @@ end, { desc = "DAP Debug last Go test" })
 map("n", "<leader>dpt", function()
   require("dap-python").test_method()
 end, { desc = "DAP Debug Python test" })
+map("n", "<leader>du", function()
+  require("dapui").toggle()
+end, { desc = "DAP Toggle UI" })
 
 -- LSP
 map("n", "gD", vim.lsp.buf.declaration, { desc = "LSP Go to declaration" })
