@@ -10,7 +10,7 @@ M.ui = {
     order = { "treeOffset", "buffers", "tabs" },
   },
   statusline = {
-    separator_style = "block",
+    theme = "minimal",
   },
 }
 
