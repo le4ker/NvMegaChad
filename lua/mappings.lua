@@ -122,5 +122,6 @@ map("n", "<leader>tn", function()
 end, { desc = "General Toggle relative numbers" })
 
 -- CodeCompanion
+map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "CodeCompanion Chat", silent = true })
 map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "CodeCompanion Actions", silent = true })
 map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "CodeCompanion Toggle", silent = true })
