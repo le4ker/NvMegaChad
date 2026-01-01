@@ -51,6 +51,7 @@ map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "General Toggle Tree View"
 map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "General Focus Tree View", silent = true })
 
 -- Telescope
+map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Telescope Live grep", silent = true })
 map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find Buffers", silent = true })
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Find Git Commits", silent = true })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Find Git Status", silent = true })
