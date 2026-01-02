@@ -20,7 +20,16 @@ map("n", "<leader>s", "<cmd>w<CR>", { desc = "General Save File", silent = true 
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "General Quit", silent = true })
 map("n", "<leader>v", "<cmd>vsplit<CR>", { desc = "General Vertical Split", silent = true })
 map("n", "<leader>lu", "<cmd>Lazy update<CR>", { desc = "General Update Lazy Plugins", silent = true })
-map("n", "<leader>mu", "<cmd>MasonUpdate<CR>", { desc = "General Update Mason Registries", silent = true })
+map("n", "<leader>mu", function()
+  local registry = require "mason-registry"
+  registry.refresh(function()
+    local installed = registry.get_installed_packages()
+    for _, pkg in ipairs(installed) do
+      pkg:install()
+    end
+  end)
+  vim.cmd "Mason"
+end, { desc = "General Update Mason Packages", silent = true })
 map("n", "<leader>pr", "<cmd>MarkdownPreviewToggle<CR>", { desc = "General Preview Markdown File", silent = true })
 map("n", "<leader>tf", function()
   vim.g.format_on_save = not vim.g.format_on_save
