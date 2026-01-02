@@ -10,7 +10,7 @@ map("n", "<C-h>", "<C-w>h", { desc = "General Switch Window Left" })
 map("n", "<C-l>", "<C-w>l", { desc = "General Switch Window Right" })
 map("n", "<C-j>", "<C-w>j", { desc = "General Switch Window Down" })
 map("n", "<C-k>", "<C-w>k", { desc = "General Switch Window Up" })
-map("n", "<leader>Y", "<cmd>%y+<CR>", { desc = "General Copy Whole File", silent = true })
+map("n", "<leader> Y", "<cmd>%y+<CR>", { desc = "General Copy Whole File", silent = true })
 map("n", "<S-u>", "<C-r>", { desc = "General Redo" })
 map("n", "<C-d>", "<C-d>zz", { desc = "General Move Half Page Down And Center" })
 map("n", "<C-u>", "<C-u>zz", { desc = "General Move Half Page Up And Center" })
@@ -29,8 +29,6 @@ end, { desc = "General Toggle Format On Save" })
 map("n", "<leader>tn", function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "General Toggle Relative Numbers" })
-
--- Comment
 map("n", "<leader>/", "gcc", { desc = "General Toggle Comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "General Toggle Comment", remap = true })
 
@@ -51,7 +49,7 @@ map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "General Toggle Tree View"
 map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "General Focus Tree View", silent = true })
 
 -- Telescope
-map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Telescope Live grep", silent = true })
+map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Find Live grep", silent = true })
 map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find Buffers", silent = true })
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Find Git Commits", silent = true })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Find Git Status", silent = true })
@@ -69,10 +67,10 @@ local function close_terminal()
   local win = vim.api.nvim_get_current_win()
   vim.api.nvim_win_close(win, true)
 end
-map("t", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
 end, { desc = "Terminal New Horizontal Terminal" })
+map("t", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 
 -- NvChad
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "NvChad Toggle NvCheatsheet", silent = true })
@@ -114,6 +112,6 @@ map("n", "<leader>du", function()
 end, { desc = "DAP Toggle UI" })
 
 -- CodeCompanion
-map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "CodeCompanion Chat", silent = true })
-map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "CodeCompanion Actions", silent = true })
-map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "CodeCompanion Toggle", silent = true })
+map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open chat", silent = true })
+map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "AI Toggle Chat", silent = true })
+map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "AI Actions", silent = true })
