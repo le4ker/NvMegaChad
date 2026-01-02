@@ -10,7 +10,7 @@ map("n", "<C-h>", "<C-w>h", { desc = "General Switch Window Left" })
 map("n", "<C-l>", "<C-w>l", { desc = "General Switch Window Right" })
 map("n", "<C-j>", "<C-w>j", { desc = "General Switch Window Down" })
 map("n", "<C-k>", "<C-w>k", { desc = "General Switch Window Up" })
-map("n", "<leader> y", "<cmd>%y+<CR>", { desc = "General Copy Whole File", silent = true })
+map("n", "<leader>y", "<cmd>%y+<CR>", { desc = "General Copy Whole File", silent = true })
 map("n", "<S-u>", "<C-r>", { desc = "General Redo" })
 map("n", "<C-d>", "<C-d>zz", { desc = "General Move Half Page Down And Center" })
 map("n", "<C-u>", "<C-u>zz", { desc = "General Move Half Page Up And Center" })
@@ -68,7 +68,7 @@ map(
   "n",
   "<leader>fa",
   "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "Search All Files" }
+  { desc = "Search All Files", silent = true }
 )
 
 -- Terminal
