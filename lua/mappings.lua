@@ -58,17 +58,17 @@ map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "General Toggle Tree View"
 map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "General Focus Tree View", silent = true })
 
 -- Telescope
-map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Find Live grep", silent = true })
-map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find Buffers", silent = true })
-map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Find Git Commits", silent = true })
-map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Find Git Status", silent = true })
-map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Find Pick Hidden Term", silent = true })
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find Files", silent = true })
+map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Search Live grep", silent = true })
+map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Search Buffers", silent = true })
+map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Search Git Commits", silent = true })
+map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Search Git Status", silent = true })
+map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Search Hidden Terminals", silent = true })
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Search Files", silent = true })
 map(
   "n",
   "<leader>fa",
   "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "Find All Files" }
+  { desc = "Search All Files" }
 )
 
 -- Terminal
