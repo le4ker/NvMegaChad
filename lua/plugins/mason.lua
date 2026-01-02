@@ -16,6 +16,7 @@ return {
     end)
   end,
   opts = {
+    max_concurrent_installers = 10,
     ensure_installed = {
       "bash-language-server",
       "black",
