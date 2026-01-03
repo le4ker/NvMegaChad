@@ -5,7 +5,7 @@
 ![lazy](https://dotfyle.com/le4ker/nvmegachad/badges/plugin-manager)
 
 <p align="center">
-  <img src=".github/images/megaman.jpeg" alt="megaman" />
+  <img src=".github/images/megaman.jpeg" alt="megaman" width="512" style="border-radius: 16px" />
 </p>
 
 [Neovim](https://neovim.io/) configuration, based on the
