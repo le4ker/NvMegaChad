@@ -1,3 +1,38 @@
+## [2.11.0](https://github.com/le4ker/NvMegaChad/compare/v2.10.0...v2.11.0) (2026-01-03)
+
+### ✨ Features
+
+* add CodeCompanion keymaps for actions and chat toggle ([3a95395](https://github.com/le4ker/NvMegaChad/commit/3a9539545c849f909fa566ae8975bd52535728f1))
+* enable more tools for CodeCompanion ([35a7b26](https://github.com/le4ker/NvMegaChad/commit/35a7b261f21e8c4d86e03023be27d37bbf4ff406))
+* set cheatsheet theme to simple ([54de0d4](https://github.com/le4ker/NvMegaChad/commit/54de0d4c39aa1b25edc5c67ec22eda6b7ec1be97))
+* update statusline theme ([92a09b7](https://github.com/le4ker/NvMegaChad/commit/92a09b77a9f00fc59b97e5d078cf16162229998e))
+
+### 🐛 Bug Fixes
+
+* make trail more visible ([b9a4176](https://github.com/le4ker/NvMegaChad/commit/b9a4176a1853c88752b13ea6d7d856b64d15f4a2))
+* remove space from mapping and make <leader>fa silent ([98a6d56](https://github.com/le4ker/NvMegaChad/commit/98a6d56fd9d4475ce6588ebab6f18aa7cf7705e6))
+* restore live grep mapping ([6cf389a](https://github.com/le4ker/NvMegaChad/commit/6cf389ae0fc4b9dfdd02c540851324fe2dfae0c3))
+* run 10 concurrent Mason installations ([8993e4e](https://github.com/le4ker/NvMegaChad/commit/8993e4ea649ea76553f4176fa97be96567e16494))
+* update installed Mason packages on <leader>mu ([6f84460](https://github.com/le4ker/NvMegaChad/commit/6f84460d7eaf59c279bb5da995c3b36a6c748eff))
+
+### 🔧 Refactoring
+
+* copy whole file on <leader>y ([ec40ecd](https://github.com/le4ker/NvMegaChad/commit/ec40ecd8ac4665fbf07e08dba3a45b69a431c2d3))
+* move CodeCompanionChat mapping to mappings.lua ([2bada9c](https://github.com/le4ker/NvMegaChad/commit/2bada9cf9db8a6f2866c3f8190651f1fedd5f74a))
+* re-organize Cheatsheet ([b6142d3](https://github.com/le4ker/NvMegaChad/commit/b6142d3be5aad614a7cbe7c95196c032a10268ba))
+* replace comment plugin with native Neovim API ([a329242](https://github.com/le4ker/NvMegaChad/commit/a32924289bdfd597d600b969db9f3e9a1846ccca))
+* update mapping descriptions ([5631f23](https://github.com/le4ker/NvMegaChad/commit/5631f2362dad959e1618daaabc399b7302d35840))
+* update mapping descriptions ([8df83dd](https://github.com/le4ker/NvMegaChad/commit/8df83dd88dacf9fa0ddf82890fa26f9758d812a8))
+
+### 📚 Documentation
+
+* update images ([979d0c9](https://github.com/le4ker/NvMegaChad/commit/979d0c9fcc6eb81d2380ebc15bf5efa2bcff3a7b))
+* update README images ([8c1c73b](https://github.com/le4ker/NvMegaChad/commit/8c1c73b9a4796c3e3b2136f38cc0e77167730caa))
+
+### 🏠 Chores
+
+* update plugin versions in lazy-lock.json ([0e4add4](https://github.com/le4ker/NvMegaChad/commit/0e4add4e3ac1211757f9f489e99905d93e44f4ba))
+
 ## [2.10.0](https://github.com/le4ker/NvMegaChad/compare/v2.9.0...v2.10.0) (2025-12-26)
 
 ### ✨ Features
