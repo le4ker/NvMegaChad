@@ -1,5 +1,6 @@
 return {
   "olimorris/codecompanion.nvim",
+  cmd = { "CodeCompanion", "CodeCompanionChat", "CodeCompanionActions" },
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
@@ -18,13 +19,10 @@ return {
         tools = {
           opts = {
             -- Enable tools for exploring the codebase (includes cmd_runner, file_search, grep_search, etc.)
-            default_tools = { "full_stack_dev" },
+            default_tools = { "full_stack_dev", "cmd_runner", "web_search", "fetch_webpage" },
           },
         },
       },
     },
-  },
-  keys = {
-    { "<leader>cc", "<cmd>CodeCompanionChat<CR>", desc = "CodeCompanion Chat" },
   },
 }

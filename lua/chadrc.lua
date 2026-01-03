@@ -10,8 +10,13 @@ M.ui = {
     order = { "treeOffset", "buffers", "tabs" },
   },
   statusline = {
+    theme = "minimal",
     separator_style = "block",
   },
+}
+
+M.cheatsheet = {
+  theme = "simple",
 }
 
 return M
