@@ -19,7 +19,7 @@ return {
         tools = {
           opts = {
             -- Enable tools for exploring the codebase (includes cmd_runner, file_search, grep_search, etc.)
-            default_tools = { "full_stack_dev", "cmd_runner", "web_search", "fetch_webpage" },
+            default_tools = { "full_stack_dev", "cmd_runner", "fetch_webpage" },
           },
         },
       },
