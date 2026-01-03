@@ -79,6 +79,7 @@ end
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
 end, { desc = "Terminal New Horizontal Terminal" })
+map("n", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 map("t", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 
 -- NvChad
