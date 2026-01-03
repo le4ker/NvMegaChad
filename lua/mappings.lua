@@ -42,20 +42,20 @@ map("n", "<leader>/", "gcc", { desc = "General Toggle Comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "General Toggle Comment", remap = true })
 
 -- Tabufline
-map("n", "<leader>b", "<cmd>enew<CR>", { desc = "General New Buffer", silent = true })
+map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New", silent = true })
 map("n", "<tab>", function()
   require("nvchad.tabufline").next()
-end, { desc = "General Go To Next Buffer" })
+end, { desc = "Buffer Go To Next" })
 map("n", "<S-tab>", function()
   require("nvchad.tabufline").prev()
-end, { desc = "General Go To Previous Buffer" })
+end, { desc = "Buffer Go To Previous" })
 map("n", "<leader>x", function()
   require("nvchad.tabufline").close_buffer()
-end, { desc = "General Close Buffer" })
+end, { desc = "Buffer Close" })
 
 -- NvimTree
-map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "General Toggle Tree View", silent = true })
-map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "General Focus Tree View", silent = true })
+map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Explorer Toggle", silent = true })
+map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "Explorer Focus", silent = true })
 
 -- Telescope
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Search Live grep", silent = true })
@@ -73,8 +73,11 @@ map(
 
 -- Terminal
 local function close_terminal()
-  local win = vim.api.nvim_get_current_win()
-  vim.api.nvim_win_close(win, true)
+  local buf = vim.api.nvim_get_current_buf()
+  if vim.bo[buf].buftype == "terminal" then
+    local win = vim.api.nvim_get_current_win()
+    vim.api.nvim_win_close(win, true)
+  end
 end
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
@@ -103,7 +106,7 @@ end, { desc = "LSP Go To Next Diagnostic" })
 
 -- DAP
 map("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", { desc = "DAP Add Breakpoint At Line", silent = true })
-map("n", "<leader>dn", "<cmd>DapStepOver<CR>", { desc = "DAP Step Over (Next)", silent = true })
+map("n", "<leader>dn", "<cmd>DapStepOver<CR>", { desc = "DAP Step Over", silent = true })
 map("n", "<leader>di", "<cmd>DapStepIn<CR>", { desc = "DAP Step In", silent = true })
 map("n", "<leader>dc", "<cmd>DapContinue<CR>", { desc = "DAP Continue", silent = true })
 map("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "DAP Terminate", silent = true })
@@ -122,6 +125,6 @@ map("n", "<leader>du", function()
 end, { desc = "DAP Toggle UI" })
 
 -- CodeCompanion
-map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open chat", silent = true })
+map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open Chat", silent = true })
 map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "AI Toggle Chat", silent = true })
 map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "AI Actions", silent = true })
