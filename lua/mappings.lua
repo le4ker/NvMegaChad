@@ -38,6 +38,9 @@ end, { desc = "General Toggle Format On Save" })
 map("n", "<leader>tn", function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "General Toggle Relative Numbers" })
+map("n", "<leader>ti", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "General Toggle Inlay Hints" })
 map("n", "<leader>/", "gcc", { desc = "General Toggle Comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "General Toggle Comment", remap = true })
 -- Tabufline
