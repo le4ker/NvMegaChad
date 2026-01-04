@@ -1,3 +1,36 @@
+## [2.12.0](https://github.com/le4ker/NvMegaChad/compare/v2.11.0...v2.12.0) (2026-01-04)
+
+### ✨ Features
+
+* add CodeCompanion inline assist with Claude Sonnet ([5b6d91c](https://github.com/le4ker/NvMegaChad/commit/5b6d91c16e349439a874173c109bf8d35523b08c))
+* add mappingto close terminal in normal mode ([b701735](https://github.com/le4ker/NvMegaChad/commit/b70173564204294ce1d4acf79ecdd7e62c2e28aa))
+* add nginx and requirements treesitter parsers ([f80156e](https://github.com/le4ker/NvMegaChad/commit/f80156eca389ebe2f2124f033c2b1c9461d1bf6c))
+* add toggle for LSP inlay hints (<leader>ti) ([bd9b9dc](https://github.com/le4ker/NvMegaChad/commit/bd9b9dc373abb15d10bfb576cbd42b89612cdede))
+* close telescope on <Esc><Esc> ([5238cb8](https://github.com/le4ker/NvMegaChad/commit/5238cb85cd517c17247c890003bf32d8ebd07e12))
+* disable approval prompts for read-only CodeCompanion tools ([81a6f95](https://github.com/le4ker/NvMegaChad/commit/81a6f9558c85393c8805ba05316447ee7f61738d))
+* enable inlay hints ([4bae044](https://github.com/le4ker/NvMegaChad/commit/4bae044a3eee5a33a2aae1b981a2fd4e642cbc0e))
+
+### 🐛 Bug Fixes
+
+* remove web_search tool ([bc0bdd7](https://github.com/le4ker/NvMegaChad/commit/bc0bdd7a2cfce16cb2c22731c7a59e33a35b1486))
+* use native LSP completion with proper Tab/Enter keymaps ([1127028](https://github.com/le4ker/NvMegaChad/commit/1127028918f8a36d47ef4c6f5c5d06ed7a5b0394))
+
+### 🔧 Refactoring
+
+* migrate from nvim-cmp to Nneovim's 0.11 native completion API ([9a4ffaa](https://github.com/le4ker/NvMegaChad/commit/9a4ffaab9a309d5d9a5b96a998844e1b1c59690d))
+* reorganize CodeCompanion config structure ([2e5535c](https://github.com/le4ker/NvMegaChad/commit/2e5535c900fbdcfcd64520db8439e39cf648dbd7))
+* update mapping descriptions ([f53a6d6](https://github.com/le4ker/NvMegaChad/commit/f53a6d60b1eb7e11198ca34d6fe837fbb5077555))
+
+### 📚 Documentation
+
+* remove Release process from README ([83c661f](https://github.com/le4ker/NvMegaChad/commit/83c661ff0e0b5bc583dd02b06a448cbf76db04ef))
+* update README.md ([df2bffa](https://github.com/le4ker/NvMegaChad/commit/df2bffa56671bc039a5c89497a6c386886ba0ffa))
+
+### 🏠 Chores
+
+* **license:** change license from GPL-3.0 to Apache-2.0 ([2d8bffd](https://github.com/le4ker/NvMegaChad/commit/2d8bffd37d7a562a7df5481c2e1e5fefc4a98407))
+* update plugin versions in lazy-lock.json ([af4df60](https://github.com/le4ker/NvMegaChad/commit/af4df600851b7469b18696b756d49fe5ea8b9d46))
+
 ## [2.11.0](https://github.com/le4ker/NvMegaChad/compare/v2.10.0...v2.11.0) (2026-01-03)
 
 ### ✨ Features
