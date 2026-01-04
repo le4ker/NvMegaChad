@@ -28,7 +28,10 @@ for _, server in ipairs(servers) do
   end
 end
 
-vim.lsp.enable(servers)
+-- Enable inlay hints
+vim.lsp.inlay_hint.enable(true)
 
 -- Enable native LSP completion
 require "configs.completion"
+
+vim.lsp.enable(servers)
