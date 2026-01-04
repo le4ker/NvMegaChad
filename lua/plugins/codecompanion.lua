@@ -18,7 +18,6 @@ return {
         },
         tools = {
           opts = {
-            -- Enable tools for exploring the codebase (includes cmd_runner, file_search, grep_search, etc.)
             default_tools = { "full_stack_dev", "cmd_runner", "fetch_webpage" },
           },
           -- Disable approval for read-only tools
