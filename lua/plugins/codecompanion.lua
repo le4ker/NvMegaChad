@@ -13,12 +13,6 @@ return {
           name = "anthropic",
           model = "claude-opus-4-5-20251101",
         },
-      },
-      inline = {
-        adapter = {
-          name = "anthropic",
-          model = "claude-sonnet-4-20250514",
-        },
         roles = {
           user = "NvMegaChad Companion",
         },
@@ -27,6 +21,12 @@ return {
             -- Enable tools for exploring the codebase (includes cmd_runner, file_search, grep_search, etc.)
             default_tools = { "full_stack_dev", "cmd_runner", "fetch_webpage" },
           },
+        },
+      },
+      inline = {
+        adapter = {
+          name = "anthropic",
+          model = "claude-sonnet-4-20250514",
         },
       },
     },
