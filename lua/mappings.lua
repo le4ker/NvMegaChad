@@ -38,24 +38,55 @@ end, { desc = "General Toggle Format On Save" })
 map("n", "<leader>tn", function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "General Toggle Relative Numbers" })
+map("n", "<leader>ti", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "General Toggle Inlay Hints" })
 map("n", "<leader>/", "gcc", { desc = "General Toggle Comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "General Toggle Comment", remap = true })
-
 -- Tabufline
-map("n", "<leader>b", "<cmd>enew<CR>", { desc = "General New Buffer", silent = true })
+map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New", silent = true })
 map("n", "<tab>", function()
   require("nvchad.tabufline").next()
-end, { desc = "General Go To Next Buffer" })
+end, { desc = "Buffer Go To Next" })
 map("n", "<S-tab>", function()
   require("nvchad.tabufline").prev()
-end, { desc = "General Go To Previous Buffer" })
+end, { desc = "Buffer Go To Previous" })
 map("n", "<leader>x", function()
   require("nvchad.tabufline").close_buffer()
-end, { desc = "General Close Buffer" })
+end, { desc = "Buffer Close" })
+map({ "i", "s" }, "<Tab>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-n>"
+  elseif vim.snippet.active { direction = 1 } then
+    vim.snippet.jump(1)
+    return ""
+  else
+    return "<Tab>"
+  end
+end, { expr = true, silent = true, desc = "General Next Completion" })
+
+map({ "i", "s" }, "<S-Tab>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-p>"
+  elseif vim.snippet.active { direction = -1 } then
+    vim.snippet.jump(-1)
+    return ""
+  else
+    return "<S-Tab>"
+  end
+end, { expr = true, silent = true, desc = "General Previous Completion" })
+
+map("i", "<CR>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-y>"
+  else
+    return "<CR>"
+  end
+end, { expr = true, silent = true, desc = "General Accept Completion" })
 
 -- NvimTree
-map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "General Toggle Tree View", silent = true })
-map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "General Focus Tree View", silent = true })
+map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Explorer Toggle", silent = true })
+map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "Explorer Focus", silent = true })
 
 -- Telescope
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Search Live grep", silent = true })
@@ -73,12 +104,16 @@ map(
 
 -- Terminal
 local function close_terminal()
-  local win = vim.api.nvim_get_current_win()
-  vim.api.nvim_win_close(win, true)
+  local buf = vim.api.nvim_get_current_buf()
+  if vim.bo[buf].buftype == "terminal" then
+    local win = vim.api.nvim_get_current_win()
+    vim.api.nvim_win_close(win, true)
+  end
 end
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
 end, { desc = "Terminal New Horizontal Terminal" })
+map("n", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 map("t", "<ESC><ESC>", close_terminal, { desc = "Terminal Close Terminal" })
 
 -- NvChad
@@ -102,7 +137,7 @@ end, { desc = "LSP Go To Next Diagnostic" })
 
 -- DAP
 map("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", { desc = "DAP Add Breakpoint At Line", silent = true })
-map("n", "<leader>dn", "<cmd>DapStepOver<CR>", { desc = "DAP Step Over (Next)", silent = true })
+map("n", "<leader>dn", "<cmd>DapStepOver<CR>", { desc = "DAP Step Over", silent = true })
 map("n", "<leader>di", "<cmd>DapStepIn<CR>", { desc = "DAP Step In", silent = true })
 map("n", "<leader>dc", "<cmd>DapContinue<CR>", { desc = "DAP Continue", silent = true })
 map("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "DAP Terminate", silent = true })
@@ -121,6 +156,8 @@ map("n", "<leader>du", function()
 end, { desc = "DAP Toggle UI" })
 
 -- CodeCompanion
-map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open chat", silent = true })
+map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open Chat", silent = true })
 map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "AI Toggle Chat", silent = true })
 map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "AI Actions", silent = true })
+map({ "n", "v" }, "<leader>ci", "<cmd>CodeCompanion<CR>", { desc = "AI Inline Assist", silent = true })
+map("v", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Chat With Selection", silent = true })

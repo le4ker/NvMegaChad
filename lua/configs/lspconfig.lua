@@ -1,7 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
--- All LSP servers to enable
--- Custom configurations are in lua/lsp/<server>.lua
+-- LSP servers to enable
 local servers = {
   "bashls",
   "clangd",
@@ -28,5 +27,11 @@ for _, server in ipairs(servers) do
     vim.lsp.config(server, custom)
   end
 end
+
+-- Enable inlay hints
+vim.lsp.inlay_hint.enable(true)
+
+-- Enable native LSP completion
+require "configs.completion"
 
 vim.lsp.enable(servers)
