@@ -13,6 +13,12 @@ return {
           name = "anthropic",
           model = "claude-opus-4-5-20251101",
         },
+      },
+      inline = {
+        adapter = {
+          name = "anthropic",
+          model = "claude-sonnet-4-20250514",
+        },
         roles = {
           user = "NvMegaChad Companion",
         },
