@@ -40,7 +40,6 @@ map("n", "<leader>tn", function()
 end, { desc = "General Toggle Relative Numbers" })
 map("n", "<leader>/", "gcc", { desc = "General Toggle Comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "General Toggle Comment", remap = true })
-
 -- Tabufline
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New", silent = true })
 map("n", "<tab>", function()
@@ -52,6 +51,35 @@ end, { desc = "Buffer Go To Previous" })
 map("n", "<leader>x", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "Buffer Close" })
+map({ "i", "s" }, "<Tab>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-n>"
+  elseif vim.snippet.active { direction = 1 } then
+    vim.snippet.jump(1)
+    return ""
+  else
+    return "<Tab>"
+  end
+end, { expr = true, silent = true, desc = "General Next Completion" })
+
+map({ "i", "s" }, "<S-Tab>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-p>"
+  elseif vim.snippet.active { direction = -1 } then
+    vim.snippet.jump(-1)
+    return ""
+  else
+    return "<S-Tab>"
+  end
+end, { expr = true, silent = true, desc = "General Previous Completion" })
+
+map("i", "<CR>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-y>"
+  else
+    return "<CR>"
+  end
+end, { expr = true, silent = true, desc = "General Accept Completion" })
 
 -- NvimTree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Explorer Toggle", silent = true })

@@ -19,13 +19,4 @@ M.cheatsheet = {
   theme = "simple",
 }
 
-M.plugins = {
-  disabled = {
-    "hrsh7th/nvim-cmp",
-    "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip",
-    "windwp/nvim-autopairs",
-  },
-}
-
 return M
