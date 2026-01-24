@@ -1,3 +1,32 @@
+## [2.13.0](https://github.com/le4ker/NvMegaChad/compare/v2.12.0...v2.13.0) (2026-01-24)
+
+### ✨ Features
+
+* **mappings:** add notification when updating Mason packages ([c6a7a64](https://github.com/le4ker/NvMegaChad/commit/c6a7a646d6fad3afeaae636364d5dc012a3672b9))
+* **options:** enable persistent undo with undofile ([2641958](https://github.com/le4ker/NvMegaChad/commit/26419582fabc81812c591c73ef8dd1b6da0a8cb6))
+
+### 🐛 Bug Fixes
+
+* disable insertReplaceSupport for gopls completion ([f09e62b](https://github.com/le4ker/NvMegaChad/commit/f09e62bde8cc1af0a42d973406c6ccb2907911a2))
+
+### 🔧 Refactoring
+
+* remove comment ([e0deb20](https://github.com/le4ker/NvMegaChad/commit/e0deb20f15ae038e2c8ce25291f030be6cbf054a))
+* remove comment ([6fadbf8](https://github.com/le4ker/NvMegaChad/commit/6fadbf8e34335537ff1693e8751e904e0649b07c))
+* remove lspcofnig code that is not needed in Neovim 0.11+ ([98a544b](https://github.com/le4ker/NvMegaChad/commit/98a544bdd05812f7473821191a9fcc544e581303))
+
+### 📚 Documentation
+
+* add badges ([1ce1f8f](https://github.com/le4ker/NvMegaChad/commit/1ce1f8f0b114f11db0c43bb00628b10b6a811de2))
+* update README image ([03e1afd](https://github.com/le4ker/NvMegaChad/commit/03e1afd09127e3aea93eff1836a838943e93bc35))
+
+### 🏠 Chores
+
+* merge develop into main ([d4ecd87](https://github.com/le4ker/NvMegaChad/commit/d4ecd87cda4b3ad22fd1682ba0f780329bcae2f8))
+* update plugin versions in lazy-lock.json ([7a4792f](https://github.com/le4ker/NvMegaChad/commit/7a4792f7a2bf30a8cb8c8d97f0dde8979b4f9d7c))
+* update plugin versions in lazy-lock.json ([f2cbf8f](https://github.com/le4ker/NvMegaChad/commit/f2cbf8f6b968f5472daba0f745c21658d922d556))
+* update plugin versions in lazy-lock.json ([5976f4f](https://github.com/le4ker/NvMegaChad/commit/5976f4fb4abc6adb801855a66a943b8144043f64))
+
 ## [2.12.0](https://github.com/le4ker/NvMegaChad/compare/v2.11.0...v2.12.0) (2026-01-04)
 
 ### ✨ Features
