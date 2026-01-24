@@ -118,6 +118,30 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
 
+## 🛠️ Development
+
+### Git Hooks Setup
+
+This repository uses [Conventional Commits](https://www.conventionalcommits.org/). To enforce this on your local clone, run:
+
+```sh
+make hooks
+```
+
+This installs a commit-msg hook that validates your commit messages follow the format:
+
+```
+<type>(<scope>): <description>
+```
+
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+
+**Examples:**
+
+- `feat(mappings): add new keybinding for terminal`
+- `fix(lsp): resolve null reference error`
+- `docs: update README`
+
 ## 📄 License
 
 See [LICENSE](LICENSE) for details.
