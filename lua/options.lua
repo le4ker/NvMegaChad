@@ -4,6 +4,7 @@ local opt = vim.opt
 
 opt.backup = false
 opt.swapfile = false
+opt.undofile = true
 opt.colorcolumn = "100"
 opt.relativenumber = true
 opt.list = true

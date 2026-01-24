@@ -21,6 +21,7 @@ map("n", "<leader>q", "<cmd>q<CR>", { desc = "General Quit", silent = true })
 map("n", "<leader>v", "<cmd>vsplit<CR>", { desc = "General Vertical Split", silent = true })
 map("n", "<leader>lu", "<cmd>Lazy update<CR>", { desc = "General Update Lazy Plugins", silent = true })
 map("n", "<leader>mu", function()
+  vim.notify("Updating Mason packages...", vim.log.levels.INFO)
   local registry = require "mason-registry"
   registry.refresh(function()
     local installed = registry.get_installed_packages()

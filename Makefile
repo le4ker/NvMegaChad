@@ -97,12 +97,21 @@ install-windows:
 		echo "- Hack Nerd Font"; \
 	fi
 
+# Install git hooks
+.PHONY: hooks
+hooks:
+	@echo "Installing git hooks..."
+	@cp scripts/commit-msg .git/hooks/commit-msg
+	@chmod +x .git/hooks/commit-msg
+	@echo "Git hooks installed successfully."
+
 # Help target
 .PHONY: help
 help:
 	@echo "Available targets:"
-	@echo "  install     - Install dependencies for the detected OS"
+	@echo "  install         - Install dependencies for the detected OS"
 	@echo "  install-macos   - Install dependencies for macOS (requires Homebrew)"
 	@echo "  install-linux   - Install dependencies for Linux (apt/yum/pacman)"
 	@echo "  install-windows - Install dependencies for Windows (Chocolatey/Scoop)"
-	@echo "  help        - Show this help message"
+	@echo "  hooks           - Install git hooks for conventional commits"
+	@echo "  help            - Show this help message"

@@ -1,5 +1,10 @@
 # NvMegaChad
 
+![Neovim](https://img.shields.io/badge/Neovim-0.11+-blueviolet?style=flat-square&logo=neovim)
+![Lua](https://img.shields.io/badge/Made%20with-Lua-blue?style=flat-square&logo=lua)
+![NvChad](https://img.shields.io/badge/Built%20on-NvChad-green?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/le4ker/NvMegaChad?style=flat-square)
+
 ![plugins](https://dotfyle.com/le4ker/nvmegachad/badges/plugins)
 ![leader](https://dotfyle.com/le4ker/nvmegachad/badges/leaderkey)
 ![lazy](https://dotfyle.com/le4ker/nvmegachad/badges/plugin-manager)
@@ -112,6 +117,30 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | TOML                  | [taplo](https://taplo.tamasfe.dev/)                                                                                                      | [taplo](https://taplo.tamasfe.dev/)                                              | —                                                          | —                                               |
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
+
+## 🛠️ Development
+
+### Git Hooks Setup
+
+This repository uses [Conventional Commits](https://www.conventionalcommits.org/). To enforce this on your local clone, run:
+
+```sh
+make hooks
+```
+
+This installs a commit-msg hook that validates your commit messages follow the format:
+
+```
+<type>(<scope>): <description>
+```
+
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+
+**Examples:**
+
+- `feat(mappings): add new keybinding for terminal`
+- `fix(lsp): resolve null reference error`
+- `docs: update README`
 
 ## 📄 License
 
