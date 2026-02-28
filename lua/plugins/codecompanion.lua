@@ -6,42 +6,17 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
   opts = {
-    strategies = {
+    interactions = {
       chat = {
-        adapter = {
-          -- ANTHROPIC_API_KEY must be set in your environment
-          name = "anthropic",
-          model = "claude-opus-4-6",
-        },
+        adapter = "claude_code",
         roles = {
           user = "NvMegaChad Companion",
-        },
-        tools = {
-          opts = {
-            default_tools = { "agent" },
-          },
-          -- Disable approval for read-only tools
-          ["read_file"] = {
-            opts = { require_approval_before = false },
-          },
-          ["file_search"] = {
-            opts = { require_approval_before = false },
-          },
-          ["grep_search"] = {
-            opts = { require_approval_before = false },
-          },
-          ["list_code_usages"] = {
-            opts = { require_approval_before = false },
-          },
-          ["get_changed_files"] = {
-            opts = { require_approval_before = false },
-          },
         },
       },
       inline = {
         adapter = {
           name = "anthropic",
-          model = "claude-sonnet-4-5",
+          model = "claude-haiku-4-5",
         },
       },
     },
