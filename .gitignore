@@ -1,2 +1,5 @@
+# macOS metadata
 **/.DS_Store
+
+# Claude Code local permissions — machine-specific, not shared
 .claude/settings.local.json
