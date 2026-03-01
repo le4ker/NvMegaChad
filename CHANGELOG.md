@@ -1,3 +1,25 @@
+## [2.14.0](https://github.com/le4ker/NvMegaChad/compare/v2.13.0...v2.14.0) (2026-03-01)
+
+### ✨ Features
+
+* add Claude Code via ACP as CodeCompanion AI backend ([b288568](https://github.com/le4ker/NvMegaChad/commit/b28856884ad81e5d1af1194f67ddb81b44af8e4f))
+* **conform:** add Makefile formatting support via bake ([d1f471e](https://github.com/le4ker/NvMegaChad/commit/d1f471e260541436c18bf735bbd3ee337e79c1d6))
+* update CodeCompanion models to claude-opus-4-6 and claude-sonnet-4-5 ([0de2357](https://github.com/le4ker/NvMegaChad/commit/0de2357bb06f68ea7d6b699737980e0efa9877cc))
+
+### 🔧 Refactoring
+
+* simplify codecompanion default_tools to use agent only ([bee55a7](https://github.com/le4ker/NvMegaChad/commit/bee55a77ed072c7a7c84084e3afe91deb9ae3473))
+
+### 🏠 Chores
+
+* add Claude Code project instructions and local settings ([c40b493](https://github.com/le4ker/NvMegaChad/commit/c40b49305d21c5f9ed4b31a0355436be27d9ee1c))
+* add comments to .gitignore ([4d8c458](https://github.com/le4ker/NvMegaChad/commit/4d8c458a20a65d07896d5508c8d4c9092c1fa7ba))
+* gitignore .claude/settings.local.json, untrack it ([6ce3ac8](https://github.com/le4ker/NvMegaChad/commit/6ce3ac8f7fdea43bb6ccbd31d27eeae9434f862e))
+* Merge branch 'develop' ([e349201](https://github.com/le4ker/NvMegaChad/commit/e3492018c888239caa81d1d086f0c139ff52e76c))
+* update plugin versions in lazy-lock.json ([a713864](https://github.com/le4ker/NvMegaChad/commit/a7138648b9c2a56a481480e1585fe47aed0126fa))
+* update plugin versions in lazy-lock.json ([962d8fb](https://github.com/le4ker/NvMegaChad/commit/962d8fbeec2f1764f95ef480b2c24f1ad4fcfdf4))
+* update plugin versions in lazy-lock.json ([fe0a172](https://github.com/le4ker/NvMegaChad/commit/fe0a172a543de259d9a7df9f6d72f99290a4c5d7))
+
 ## [2.13.0](https://github.com/le4ker/NvMegaChad/compare/v2.12.0...v2.13.0) (2026-01-24)
 
 ### ✨ Features
