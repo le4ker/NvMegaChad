@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(git add README.md lua/configs/conform.lua lua/plugins/mason.lua)",
+      "Bash(git commit:*)",
+      "Bash(git add CLAUDE.md .claude/settings.local.json)"
+    ]
+  }
+}
