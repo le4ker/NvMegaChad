@@ -13,14 +13,19 @@
   <img src=".github/images/megaman.jpeg" alt="megaman" width="512" style="border-radius: 16px" />
 </p>
 
-A batteries-included [Neovim](https://neovim.io/) configuration built on top of [NvChad](https://nvchad.com/). Designed with a minimal UI philosophy while providing comprehensive out-of-the-box support for modern development workflows.
+A batteries-included [Neovim](https://neovim.io/) configuration built on top of
+[NvChad](https://nvchad.com/). Designed with a minimal UI philosophy while
+providing comprehensive out-of-the-box support for modern development workflows.
 
 ## ✨ Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
 - **Multi-language Support** — 17 languages with LSP, formatting, and linting
 - **Debugging** — Integrated DAP support for Go and Python
-- **AI Assistant** — Built-in [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with [Claude Code](https://www.anthropic.com/claude-code) via [ACP](https://agentclientprotocol.com/)
+- **AI Assistant** — Built-in
+  [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with
+  [Claude Code](https://www.anthropic.com/claude-code) via
+  [ACP](https://agentclientprotocol.com/)
 - **Markdown Preview** — Live preview for documentation workflows
 - **Git Integration** — Visual commit history and diff tools
 
@@ -70,7 +75,8 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of 
 | [claude-agent-acp](https://github.com/zed-industries/claude-agent-acp)   | Latest  | ACP bridge for Claude Code      |
 | [Terraform](https://www.terraform.io/)                                   | Latest  | Optional, for Terraform support |
 
-> **Tip:** All dependencies can be installed automatically by running `make install`
+> **Tip:** All dependencies can be installed automatically by running
+> `make install`
 
 ## 🚀 Installation
 
@@ -125,19 +131,23 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 
 ### Git Hooks Setup
 
-This repository uses [Conventional Commits](https://www.conventionalcommits.org/). To enforce this on your local clone, run:
+This repository uses
+[Conventional Commits](https://www.conventionalcommits.org/). To enforce this on
+your local clone, run:
 
 ```sh
 make hooks
 ```
 
-This installs a commit-msg hook that validates your commit messages follow the format:
+This installs a commit-msg hook that validates your commit messages follow the
+format:
 
 ```
 <type>(<scope>): <description>
 ```
 
-**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`,
+`build`, `ci`, `chore`, `revert`
 
 **Examples:**
 
