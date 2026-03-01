@@ -10,6 +10,7 @@ local options = {
     javascriptreact = { "prettier" },
     json = { "prettier" },
     lua = { "stylua" },
+    make = { "bake" },
     markdown = { "prettier" },
     python = { "isort", "black" },
     scss = { "prettier" },

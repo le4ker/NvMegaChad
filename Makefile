@@ -25,6 +25,9 @@ install-macos:
 	brew install font-hack-nerd-font
 	# ripgrep
 	brew install ripgrep
+	# claude code + acp bridge
+	@command -v claude >/dev/null 2>&1 || { echo "Claude Code not found. Please install it first: https://docs.anthropic.com/en/docs/claude-code/quickstart"; }
+	brew install claude-agent-acp
 	# terraform
 	brew tap hashicorp/tap
 	brew install hashicorp/tap/terraform
@@ -39,6 +42,8 @@ install-linux:
 		echo "Using apt-get (Debian/Ubuntu)"; \
 		sudo apt-get update; \
 		sudo apt-get install -y ripgrep neovim; \
+		# Install claude-agent-acp via npm; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @anthropic-ai/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		mkdir -p ~/.local/share/fonts; \
 		cd ~/.local/share/fonts && curl -fLo "Hack Regular Nerd Font Complete.ttf" "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf"; \
@@ -50,6 +55,8 @@ install-linux:
 	elif command -v yum >/dev/null 2>&1; then \
 		echo "Using yum (RHEL/CentOS)"; \
 		sudo yum install -y ripgrep neovim; \
+		# Install claude-agent-acp via npm; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @anthropic-ai/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		mkdir -p ~/.local/share/fonts; \
 		cd ~/.local/share/fonts && curl -fLo "Hack Regular Nerd Font Complete.ttf" "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf"; \
@@ -61,6 +68,8 @@ install-linux:
 	elif command -v pacman >/dev/null 2>&1; then \
 		echo "Using pacman (Arch Linux)"; \
 		sudo pacman -S --noconfirm ripgrep neovim terraform; \
+		# Install claude-agent-acp via npm; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @anthropic-ai/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		yay -S --noconfirm nerd-fonts-hack || paru -S --noconfirm nerd-fonts-hack || echo "Please install nerd-fonts-hack manually"; \
 	else \

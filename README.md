@@ -18,9 +18,9 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of 
 ## ✨ Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
-- **Multi-language Support** — 16 languages with LSP, formatting, and linting
+- **Multi-language Support** — 17 languages with LSP, formatting, and linting
 - **Debugging** — Integrated DAP support for Go and Python
-- **AI Assistant** — Built-in [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) integration
+- **AI Assistant** — Built-in [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with [Claude Code](https://www.anthropic.com/claude-code) via [ACP](https://agentclientprotocol.com/)
 - **Markdown Preview** — Live preview for documentation workflows
 - **Git Integration** — Visual commit history and diff tools
 
@@ -61,12 +61,14 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of 
 
 ## 📋 Requirements
 
-| Dependency                                                      | Version | Notes                           |
-| --------------------------------------------------------------- | ------- | ------------------------------- |
-| [Neovim](https://github.com/neovim/neovim/releases/tag/v0.11.0) | 0.11.0+ | Required                        |
-| [Nerd Font](https://www.nerdfonts.com/)                         | Any     | Hack Nerd Font recommended      |
-| [Ripgrep](https://github.com/BurntSushi/ripgrep)                | Latest  | For fuzzy finding               |
-| [Terraform](https://www.terraform.io/)                          | Latest  | Optional, for Terraform support |
+| Dependency                                                               | Version | Notes                           |
+| ------------------------------------------------------------------------ | ------- | ------------------------------- |
+| [Neovim](https://github.com/neovim/neovim/releases/tag/v0.11.0)          | 0.11.0+ | Required                        |
+| [Nerd Font](https://www.nerdfonts.com/)                                  | Any     | Hack Nerd Font recommended      |
+| [Ripgrep](https://github.com/BurntSushi/ripgrep)                         | Latest  | For fuzzy finding               |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code/quickstart) | Latest  | For AI assistant                |
+| [claude-agent-acp](https://github.com/zed-industries/claude-agent-acp)   | Latest  | ACP bridge for Claude Code      |
+| [Terraform](https://www.terraform.io/)                                   | Latest  | Optional, for Terraform support |
 
 > **Tip:** All dependencies can be installed automatically by running `make install`
 
@@ -115,6 +117,7 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | Dockerfile            | [dockerfile-language-server](https://github.com/rcjsuen/dockerfile-language-server-nodejs)                                               | —                                                                                | —                                                          | —                                               |
 | Terraform             | [terraform-ls](https://github.com/hashicorp/terraform-ls)                                                                                | [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)      | [tflint](https://github.com/terraform-linters/tflint)      | —                                               |
 | TOML                  | [taplo](https://taplo.tamasfe.dev/)                                                                                                      | [taplo](https://taplo.tamasfe.dev/)                                              | —                                                          | —                                               |
+| Makefile              | —                                                                                                                                        | [bake](https://github.com/nicholasgasior/bake)                                   | —                                                          | —                                               |
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
 

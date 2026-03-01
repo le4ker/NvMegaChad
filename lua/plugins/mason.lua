@@ -18,6 +18,7 @@ return {
   opts = {
     max_concurrent_installers = 10,
     ensure_installed = {
+      "mbake",
       "bash-language-server",
       "black",
       "clangd",
