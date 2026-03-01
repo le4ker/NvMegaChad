@@ -18,7 +18,7 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of 
 ## ✨ Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
-- **Multi-language Support** — 16 languages with LSP, formatting, and linting
+- **Multi-language Support** — 17 languages with LSP, formatting, and linting
 - **Debugging** — Integrated DAP support for Go and Python
 - **AI Assistant** — Built-in [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with [Claude Code](https://www.anthropic.com/claude-code) via [ACP](https://agentclientprotocol.com/)
 - **Markdown Preview** — Live preview for documentation workflows
@@ -117,6 +117,7 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | Dockerfile            | [dockerfile-language-server](https://github.com/rcjsuen/dockerfile-language-server-nodejs)                                               | —                                                                                | —                                                          | —                                               |
 | Terraform             | [terraform-ls](https://github.com/hashicorp/terraform-ls)                                                                                | [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)      | [tflint](https://github.com/terraform-linters/tflint)      | —                                               |
 | TOML                  | [taplo](https://taplo.tamasfe.dev/)                                                                                                      | [taplo](https://taplo.tamasfe.dev/)                                              | —                                                          | —                                               |
+| Makefile              | —                                                                                                                                        | [bake](https://github.com/nicholasgasior/bake)                                   | —                                                          | —                                               |
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
 
