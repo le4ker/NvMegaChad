@@ -1,5 +1,6 @@
 return {
   "williamboman/mason.nvim",
+  lazy = false,
   config = function(_, opts)
     require("mason").setup(opts)
     local mason_registry = require "mason-registry"
@@ -21,6 +22,7 @@ return {
       "mbake",
       "bash-language-server",
       "black",
+      "checkmake",
       "clangd",
       "clang-format",
       "css-lsp",
