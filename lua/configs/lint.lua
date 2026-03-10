@@ -27,8 +27,9 @@ lint.linters.pylint.cmd = function()
 
   -- Fallback: check for local .venv directory
   local local_venv = util.path.join(root_dir, ".venv")
-  if util.path.is_dir(local_venv) then
-    return local_venv .. "/bin/pylint"
+  local local_pylint = local_venv .. "/bin/pylint"
+  if vim.fn.executable(local_pylint) == 1 then
+    return local_pylint
   end
 
   -- Final fallback to system pylint
