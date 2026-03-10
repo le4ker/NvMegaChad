@@ -21,7 +21,6 @@ return {
       "ini",
       "javascript",
       "json",
-      "jsonc",
       "lua",
       "make",
       "markdown",
