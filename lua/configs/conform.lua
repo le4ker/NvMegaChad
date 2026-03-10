@@ -1,4 +1,4 @@
-local options = {
+require("conform").setup {
   formatters_by_ft = {
     c = { "clang-format" },
     cpp = { "clang-format" },
@@ -24,10 +24,6 @@ local options = {
     yaml = { "prettier" },
     zsh = { "shfmt" },
   },
-}
-
-require("conform").setup {
-  formatters_by_ft = options.formatters_by_ft,
   format_on_save = function()
     if not vim.g.format_on_save then
       return
