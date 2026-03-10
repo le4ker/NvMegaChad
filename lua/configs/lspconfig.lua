@@ -14,7 +14,6 @@ local servers = {
   "ruby_lsp",
   "taplo",
   "terraformls",
-  "tflint",
   "ts_ls",
   "vimls",
   "yamlls",
