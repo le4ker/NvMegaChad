@@ -5,20 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
   },
-  opts = {
-    interactions = {
-      chat = {
-        adapter = "claude_code",
-        roles = {
-          user = "NvMegaChad Companion",
-        },
-      },
-      inline = {
-        adapter = {
-          name = "anthropic",
-          model = "claude-haiku-4-5",
-        },
-      },
-    },
-  },
+  config = function()
+    require "configs.codecompanion"
+  end,
 }
