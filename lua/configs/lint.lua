@@ -20,7 +20,10 @@ lint.linters.pylint.cmd = function()
     if vim.v.shell_error == 0 then
       local venv = vim.fn.trim(result)
       if venv ~= "" then
-        return venv .. "/bin/pylint"
+        local poetry_pylint = venv .. "/bin/pylint"
+        if vim.fn.executable(poetry_pylint) == 1 then
+          return poetry_pylint
+        end
       end
     end
   end
