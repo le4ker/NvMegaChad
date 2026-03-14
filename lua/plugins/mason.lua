@@ -11,7 +11,13 @@ return {
       for _, tool in ipairs(ensure_installed) do
         local ok, package = pcall(mason_registry.get_package, tool)
         if ok and not package:is_installed() then
-          package:install()
+          package:install():once("closed", function()
+            if not package:is_installed() then
+              vim.schedule(function()
+                vim.notify("Mason: failed to install " .. tool, vim.log.levels.ERROR)
+              end)
+            end
+          end)
         end
       end
     end)
