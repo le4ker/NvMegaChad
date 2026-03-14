@@ -95,7 +95,7 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Search Buffers", 
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Search Git Commits", silent = true })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Search Git Status", silent = true })
 map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Search Hidden Terminals", silent = true })
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Search Files", silent = true })
+map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Search Files", silent = true })
 map(
   "n",
   "<leader>fa",
