@@ -9,7 +9,7 @@ lint.linters_by_ft = {
   terraform = { "tflint" },
 }
 
--- Configure pylint to use Poetry environment
+-- Configure pylint to use the active Python environment (Poetry venv → local .venv → system fallback)
 lint.linters.pylint.cmd = function()
   local util = require "lspconfig.util"
   local root_dir = util.find_git_ancestor(vim.api.nvim_buf_get_name(0)) or vim.fn.getcwd()
