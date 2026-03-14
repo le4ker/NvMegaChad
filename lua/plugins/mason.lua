@@ -40,6 +40,7 @@ return {
       "gopls",
       "html-lsp",
       "isort",
+      "json-lsp",
       "stylua",
       "taplo",
       "terraform-ls",

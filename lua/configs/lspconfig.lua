@@ -8,6 +8,7 @@ local servers = {
   "dockerls",
   "gopls",
   "html",
+  "jsonls",
   "lua_ls",
   "marksman",
   "pyright",
