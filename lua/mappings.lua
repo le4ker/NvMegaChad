@@ -28,8 +28,10 @@ map("n", "<leader>mu", function()
     for _, pkg in ipairs(installed) do
       pkg:install()
     end
+    vim.schedule(function()
+      vim.cmd "Mason"
+    end)
   end)
-  vim.cmd "Mason"
 end, { desc = "General Update Mason Packages", silent = true })
 map("n", "<leader>pr", "<cmd>MarkdownPreviewToggle<CR>", { desc = "General Preview Markdown File", silent = true })
 map("n", "<leader>tf", function()
