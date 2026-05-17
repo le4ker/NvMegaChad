@@ -27,7 +27,7 @@ install-macos:
 	brew install ripgrep
 	# claude code + acp bridge
 	@command -v claude >/dev/null 2>&1 || { echo "Claude Code not found. Please install it first: https://docs.anthropic.com/en/docs/claude-code/quickstart"; }
-	npm install -g @zed-industries/claude-code-acp
+	npm install -g --force @agentclientprotocol/claude-agent-acp
 	# terraform
 	brew tap hashicorp/tap
 	brew install hashicorp/tap/terraform
@@ -43,7 +43,7 @@ install-linux:
 		sudo apt-get update; \
 		sudo apt-get install -y ripgrep neovim; \
 		# Install claude-agent-acp via npm; \
-		command -v npm >/dev/null 2>&1 && sudo npm install -g @zed-industries/claude-code-acp || echo "npm not found, please install claude-agent-acp manually"; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @agentclientprotocol/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		mkdir -p ~/.local/share/fonts; \
 		cd ~/.local/share/fonts && curl -fLo "Hack Regular Nerd Font Complete.ttf" "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf"; \
@@ -56,7 +56,7 @@ install-linux:
 		echo "Using yum (RHEL/CentOS)"; \
 		sudo yum install -y ripgrep neovim; \
 		# Install claude-agent-acp via npm; \
-		command -v npm >/dev/null 2>&1 && sudo npm install -g @zed-industries/claude-code-acp || echo "npm not found, please install claude-agent-acp manually"; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @agentclientprotocol/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		mkdir -p ~/.local/share/fonts; \
 		cd ~/.local/share/fonts && curl -fLo "Hack Regular Nerd Font Complete.ttf" "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf"; \
@@ -69,7 +69,7 @@ install-linux:
 		echo "Using pacman (Arch Linux)"; \
 		sudo pacman -S --noconfirm ripgrep neovim terraform; \
 		# Install claude-agent-acp via npm; \
-		command -v npm >/dev/null 2>&1 && sudo npm install -g @zed-industries/claude-code-acp || echo "npm not found, please install claude-agent-acp manually"; \
+		command -v npm >/dev/null 2>&1 && sudo npm install -g @agentclientprotocol/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		yay -S --noconfirm nerd-fonts-hack || paru -S --noconfirm nerd-fonts-hack || echo "Please install nerd-fonts-hack manually"; \
 	else \
