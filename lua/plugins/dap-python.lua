@@ -5,8 +5,7 @@ return {
     "mfussenegger/nvim-dap",
     "rcarriga/nvim-dap-ui",
   },
-  config = function(_, _)
-    local path = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python"
-    require("dap-python").setup(path)
+  config = function()
+    require "configs.dap-python"
   end,
 }

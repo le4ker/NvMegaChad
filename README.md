@@ -13,14 +13,19 @@
   <img src=".github/images/megaman.jpeg" alt="megaman" width="512" style="border-radius: 16px" />
 </p>
 
-A batteries-included [Neovim](https://neovim.io/) configuration built on top of [NvChad](https://nvchad.com/). Designed with a minimal UI philosophy while providing comprehensive out-of-the-box support for modern development workflows.
+A batteries-included [Neovim](https://neovim.io/) configuration built on top of
+[NvChad](https://nvchad.com/). Designed with a minimal UI philosophy while
+providing comprehensive out-of-the-box support for modern development workflows.
 
 ## ✨ Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
-- **Multi-language Support** — 17 languages with LSP, formatting, and linting
+- **Multi-language Support** — 18 languages with LSP, formatting, and linting
 - **Debugging** — Integrated DAP support for Go and Python
-- **AI Assistant** — Built-in [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with [Claude Code](https://www.anthropic.com/claude-code) via [ACP](https://agentclientprotocol.com/)
+- **AI Assistant** — Built-in
+  [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with
+  [Claude Code](https://www.anthropic.com/claude-code) via
+  [ACP](https://agentclientprotocol.com/)
 - **Markdown Preview** — Live preview for documentation workflows
 - **Git Integration** — Visual commit history and diff tools
 
@@ -70,7 +75,8 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of 
 | [claude-agent-acp](https://github.com/zed-industries/claude-agent-acp)   | Latest  | ACP bridge for Claude Code      |
 | [Terraform](https://www.terraform.io/)                                   | Latest  | Optional, for Terraform support |
 
-> **Tip:** All dependencies can be installed automatically by running `make install`
+> **Tip:** All dependencies can be installed automatically by running
+> `make install`
 
 ## 🚀 Installation
 
@@ -110,14 +116,15 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | Ruby                  | [ruby-lsp](https://github.com/Shopify/ruby-lsp)                                                                                          | [rubocop](https://github.com/rubocop/rubocop)                                    | [rubocop](https://github.com/rubocop/rubocop)              | —                                               |
 | TypeScript/JavaScript | [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)                                   | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
 | HTML/CSS/SCSS         | [html-lsp](https://github.com/microsoft/vscode-html-languageservice), [css-lsp](https://github.com/microsoft/vscode-css-languageservice) | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
-| JSON/GraphQL          | —                                                                                                                                        | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
+| JSON                  | [json-language-server](https://github.com/microsoft/vscode-langservers-extracted)                                                        | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
+| GraphQL               | —                                                                                                                                        | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
 | YAML                  | [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)                                                         | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
 | Markdown              | [marksman](https://github.com/artempyanykh/marksman)                                                                                     | [prettier](https://github.com/prettier/prettier)                                 | [markdownlint](https://github.com/DavidAnson/markdownlint) | —                                               |
 | Bash                  | [bash-language-server](https://github.com/bash-lsp/bash-language-server)                                                                 | [shfmt](https://github.com/mvdan/sh)                                             | —                                                          | —                                               |
 | Dockerfile            | [dockerfile-language-server](https://github.com/rcjsuen/dockerfile-language-server-nodejs)                                               | —                                                                                | —                                                          | —                                               |
 | Terraform             | [terraform-ls](https://github.com/hashicorp/terraform-ls)                                                                                | [terraform_fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)      | [tflint](https://github.com/terraform-linters/tflint)      | —                                               |
 | TOML                  | [taplo](https://taplo.tamasfe.dev/)                                                                                                      | [taplo](https://taplo.tamasfe.dev/)                                              | —                                                          | —                                               |
-| Makefile              | —                                                                                                                                        | [bake](https://github.com/nicholasgasior/bake)                                   | —                                                          | —                                               |
+| Makefile              | —                                                                                                                                        | [bake](https://github.com/nicholasgasior/bake)                                   | [checkmake](https://github.com/mrtazz/checkmake)           | —                                               |
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
 
@@ -125,19 +132,23 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 
 ### Git Hooks Setup
 
-This repository uses [Conventional Commits](https://www.conventionalcommits.org/). To enforce this on your local clone, run:
+This repository uses
+[Conventional Commits](https://www.conventionalcommits.org/). To enforce this on
+your local clone, run:
 
 ```sh
 make hooks
 ```
 
-This installs a commit-msg hook that validates your commit messages follow the format:
+This installs a commit-msg hook that validates your commit messages follow the
+format:
 
 ```
 <type>(<scope>): <description>
 ```
 
-**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`,
+`build`, `ci`, `chore`, `revert`
 
 **Examples:**
 

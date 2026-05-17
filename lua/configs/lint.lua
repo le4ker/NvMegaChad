@@ -5,10 +5,11 @@ lint.linters_by_ft = {
   markdown = { "markdownlint" },
   python = { "pylint" },
   ruby = { "rubocop" },
+  make = { "checkmake" },
   terraform = { "tflint" },
 }
 
--- Configure pylint to use Poetry environment
+-- Configure pylint to use the active Python environment (Poetry venv → local .venv → system fallback)
 lint.linters.pylint.cmd = function()
   local util = require "lspconfig.util"
   local root_dir = util.find_git_ancestor(vim.api.nvim_buf_get_name(0)) or vim.fn.getcwd()
@@ -19,15 +20,19 @@ lint.linters.pylint.cmd = function()
     if vim.v.shell_error == 0 then
       local venv = vim.fn.trim(result)
       if venv ~= "" then
-        return venv .. "/bin/pylint"
+        local poetry_pylint = venv .. "/bin/pylint"
+        if vim.fn.executable(poetry_pylint) == 1 then
+          return poetry_pylint
+        end
       end
     end
   end
 
   -- Fallback: check for local .venv directory
   local local_venv = util.path.join(root_dir, ".venv")
-  if util.path.is_dir(local_venv) then
-    return local_venv .. "/bin/pylint"
+  local local_pylint = local_venv .. "/bin/pylint"
+  if vim.fn.executable(local_pylint) == 1 then
+    return local_pylint
   end
 
   -- Final fallback to system pylint

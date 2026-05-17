@@ -28,8 +28,10 @@ map("n", "<leader>mu", function()
     for _, pkg in ipairs(installed) do
       pkg:install()
     end
+    vim.schedule(function()
+      vim.cmd "Mason"
+    end)
   end)
-  vim.cmd "Mason"
 end, { desc = "General Update Mason Packages", silent = true })
 map("n", "<leader>pr", "<cmd>MarkdownPreviewToggle<CR>", { desc = "General Preview Markdown File", silent = true })
 map("n", "<leader>tf", function()
@@ -95,7 +97,7 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Search Buffers", 
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Search Git Commits", silent = true })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Search Git Status", silent = true })
 map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Search Hidden Terminals", silent = true })
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Search Files", silent = true })
+map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Search Files", silent = true })
 map(
   "n",
   "<leader>fa",

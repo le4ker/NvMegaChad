@@ -2,9 +2,6 @@ return {
   settings = {
     python = {
       analysis = {
-        extraPaths = {
-          "global_helpers",
-        },
         autoSearchPaths = true,
         useLibraryCodeForTypes = true,
         diagnosticMode = "workspace",

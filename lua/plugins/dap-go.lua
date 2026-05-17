@@ -5,7 +5,7 @@ return {
     "mfussenegger/nvim-dap",
     "rcarriga/nvim-dap-ui",
   },
-  config = function(_, opts)
-    require("dap-go").setup(opts)
+  config = function()
+    require "configs.dap-go"
   end,
 }

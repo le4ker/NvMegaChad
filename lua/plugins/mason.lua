@@ -1,5 +1,6 @@
 return {
   "williamboman/mason.nvim",
+  lazy = false,
   config = function(_, opts)
     require("mason").setup(opts)
     local mason_registry = require "mason-registry"
@@ -10,7 +11,13 @@ return {
       for _, tool in ipairs(ensure_installed) do
         local ok, package = pcall(mason_registry.get_package, tool)
         if ok and not package:is_installed() then
-          package:install()
+          package:install():once("closed", function()
+            if not package:is_installed() then
+              vim.schedule(function()
+                vim.notify("Mason: failed to install " .. tool, vim.log.levels.ERROR)
+              end)
+            end
+          end)
         end
       end
     end)
@@ -21,6 +28,7 @@ return {
       "mbake",
       "bash-language-server",
       "black",
+      "checkmake",
       "clangd",
       "clang-format",
       "css-lsp",
@@ -32,6 +40,7 @@ return {
       "gopls",
       "html-lsp",
       "isort",
+      "json-lsp",
       "stylua",
       "taplo",
       "terraform-ls",

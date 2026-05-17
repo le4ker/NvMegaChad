@@ -1,5 +1,7 @@
 return {
   "mfussenegger/nvim-dap",
-  lazy = true,
+  dependencies = {
+    "rcarriga/nvim-dap-ui",
+  },
   cmd = { "DapToggleBreakpoint", "DapContinue", "DapStepOver", "DapStepIn", "DapStepOut", "DapTerminate" },
 }
