@@ -1,3 +1,52 @@
+## [2.15.0](https://github.com/le4ker/NvMegaChad/compare/v2.14.0...v2.15.0) (2026-05-17)
+
+### ✨ Features
+
+* **lsp:** add jsonls for JSON language support ([99e8c6c](https://github.com/le4ker/NvMegaChad/commit/99e8c6c0da00a33e11a5cd7d2e97132c0b54aad9))
+* **make:** add checkmake linter and eager-load Mason ([4481f7b](https://github.com/le4ker/NvMegaChad/commit/4481f7bec61109eee4918aa10ca78f62bbac7ee9))
+* **make:** add checkmake linter and eager-load Mason ([2902546](https://github.com/le4ker/NvMegaChad/commit/2902546767955a0269798e58604be251a53aa2c5))
+
+### 🐛 Bug Fixes
+
+* **codecompanion:** switch inline adapter to claude_code ([99828c2](https://github.com/le4ker/NvMegaChad/commit/99828c2f4e21c0a1619d282ec107b51427c0819a))
+* **codecompanion:** update claude-agent-acp package name ([d70a4e7](https://github.com/le4ker/NvMegaChad/commit/d70a4e7e4b74e99809888addfee15108e74b19fd))
+* **dap:** ensure dap-ui loads with any DAP command ([c54b579](https://github.com/le4ker/NvMegaChad/commit/c54b57991aaf97649f085da28be8901676d9c5c9))
+* **lint:** check executable for Poetry venv pylint path ([f85cff5](https://github.com/le4ker/NvMegaChad/commit/f85cff5f1e6a611d4b42c8d1f0f418f591fa2f71))
+* **lint:** verify pylint binary exists before using venv path ([b3f50f3](https://github.com/le4ker/NvMegaChad/commit/b3f50f3bad3e7c13ad394e32f0a97fed50259abf))
+* **lsp:** remove hardcoded extraPaths from pyright config ([2018daa](https://github.com/le4ker/NvMegaChad/commit/2018daa672731f9bf97aa4ebcf4b40f2f75e811f))
+* **lsp:** remove tflint from LSP servers list ([74d0d14](https://github.com/le4ker/NvMegaChad/commit/74d0d14a65c4c623a57ddcff60141b17ecd9996e))
+* **makefile:** remove --force and sudo from npm install for claude-agent-acp ([dba6e21](https://github.com/le4ker/NvMegaChad/commit/dba6e21e7b55e845539999e8cfa890c814963c29))
+* **make:** use correct npm package for claude-code-acp install ([75b6838](https://github.com/le4ker/NvMegaChad/commit/75b68384a013994d074f37a74430a5f3efcdf2cf))
+* **markdown-preview:** use correct executable check for npx ([3aebc81](https://github.com/le4ker/NvMegaChad/commit/3aebc815602beec7c5f01b825086e6de4fff0cc7))
+* **mason:** notify on failed package installation ([3db17bb](https://github.com/le4ker/NvMegaChad/commit/3db17bb34915d1d0fe61b9877f847b1cc0c2ee9e))
+* **mason:** open Mason UI after async registry refresh completes ([cbd2d3c](https://github.com/le4ker/NvMegaChad/commit/cbd2d3c8d66788c88a18544a0554d8417a659a45))
+* **treesitter:** add nvim-treesitter runtime/ to rtp for highlight queries ([48baad7](https://github.com/le4ker/NvMegaChad/commit/48baad76293d46631c14c0da3f5ee8b7ef3e8d76))
+* **treesitter:** remove invalid jsonc parser from ensure_installed ([a0486c5](https://github.com/le4ker/NvMegaChad/commit/a0486c505ac995b9698be412e12530eaa76b1a7c))
+
+### 🔧 Refactoring
+
+* **conform:** remove unnecessary options intermediate table ([830fbfc](https://github.com/le4ker/NvMegaChad/commit/830fbfcbebc38443f912bffdce9a078cea9264bf))
+* **dap:** remove redundant lazy = true ([a5c4c68](https://github.com/le4ker/NvMegaChad/commit/a5c4c68fbf635679b21978f887e68ae90b3b4316))
+* **lsp:** remove work-specific Panther schemas from yamlls ([821c13a](https://github.com/le4ker/NvMegaChad/commit/821c13a943ecdcf8ad1471aadc387fb93a0c1585))
+* **plugins:** apply two-file pattern to all plugin specs ([e8d6263](https://github.com/le4ker/NvMegaChad/commit/e8d6263dfc39bf3ef0a86f307e9f4341fcb3d9a6))
+
+### 📚 Documentation
+
+* **claude:** expand CLAUDE.md with missing rules and design decisions ([fd14472](https://github.com/le4ker/NvMegaChad/commit/fd144721784442e0372a47e0052b5d4ccc840806))
+* **lint:** clarify pylint cmd comment to reflect all fallback cases ([a30d7ee](https://github.com/le4ker/NvMegaChad/commit/a30d7eeb841e743c401beaf16b568d9f4110dcd0))
+
+### 🏠 Chores
+
+* merge branch 'develop' ([3121f03](https://github.com/le4ker/NvMegaChad/commit/3121f03aee498b9911f1335ca76e2eef16f5ab7b))
+* **plugins:** update lazy-lock.json ([821041c](https://github.com/le4ker/NvMegaChad/commit/821041ccfa01da1a80088420a63d1c48f733bbb0))
+* **plugins:** update lazy-lock.json ([7fef93f](https://github.com/le4ker/NvMegaChad/commit/7fef93f3a573bbdba3b98ad0d1837abeffc59914))
+* **plugins:** update lazy-lock.json ([9ff25ea](https://github.com/le4ker/NvMegaChad/commit/9ff25eaca854437b6f0345c90da5d94f250c3feb))
+* **plugins:** update lazy-lock.json ([ec5d884](https://github.com/le4ker/NvMegaChad/commit/ec5d884ea08373c6c14cdd07e2e729018ea24627))
+* **plugins:** update lazy-lock.json ([422257a](https://github.com/le4ker/NvMegaChad/commit/422257af825dbbc0d3c5f1c8f62ae76ad2b61094))
+* **plugins:** update lazy-lock.json ([b37feb1](https://github.com/le4ker/NvMegaChad/commit/b37feb16cb5ccde7ee4ac7f5fe1afda545863314))
+* **plugins:** update lazy-lock.json ([3dc700f](https://github.com/le4ker/NvMegaChad/commit/3dc700f6f4afb0d72ccd444c1ca32743136e71c9))
+* **plugins:** update lazy-lock.json plugin versions ([be0f6be](https://github.com/le4ker/NvMegaChad/commit/be0f6be1826be1f66b8b28b01f83f568bc07db96))
+
 ## [2.14.0](https://github.com/le4ker/NvMegaChad/compare/v2.13.0...v2.14.0) (2026-03-01)
 
 ### ✨ Features
