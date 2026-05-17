@@ -7,10 +7,7 @@ require("codecompanion").setup {
       },
     },
     inline = {
-      adapter = {
-        name = "anthropic",
-        model = "claude-haiku-4-5",
-      },
+      adapter = "claude_code",
     },
   },
 }
