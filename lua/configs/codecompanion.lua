@@ -18,8 +18,5 @@ require("codecompanion").setup {
         user = "Claude Code",
       },
     },
-    inline = {
-      adapter = "claude_code",
-    },
   },
 }
