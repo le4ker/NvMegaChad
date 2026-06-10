@@ -1,3 +1,8 @@
+-- Prefer a plain ANTHROPIC_API_KEY when present; otherwise fall back to the
+-- Claude Code Pro OAuth token stored in the macOS Keychain.
+local has_api_key = vim.env.ANTHROPIC_API_KEY ~= nil and vim.env.ANTHROPIC_API_KEY ~= ""
+local chat_adapter = has_api_key and "anthropic" or "claude_code"
+
 require("codecompanion").setup {
   adapters = {
     acp = {
@@ -13,7 +18,7 @@ require("codecompanion").setup {
   },
   interactions = {
     chat = {
-      adapter = "claude_code",
+      adapter = chat_adapter,
       roles = {
         user = "Claude Code",
       },
