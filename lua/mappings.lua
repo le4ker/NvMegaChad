@@ -163,3 +163,9 @@ map("n", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Open Chat", si
 map("n", "<leader>cct", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "AI Toggle Chat", silent = true })
 map("n", "<leader>cca", "<cmd>CodeCompanionActions<CR>", { desc = "AI Actions", silent = true })
 map("v", "<leader>cc", "<cmd>CodeCompanionChat<CR>", { desc = "AI Chat With Selection", silent = true })
+
+local cc_zoomed = false
+map("n", "<leader>ccz", function()
+  vim.cmd(cc_zoomed and "wincmd =" or "wincmd |")
+  cc_zoomed = not cc_zoomed
+end, { desc = "AI Zoom Chat Window" })
