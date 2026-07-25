@@ -17,6 +17,7 @@ require("conform").setup {
     sh = { "shfmt" },
     sql = { "sql_formatter" },
     ruby = { "rubocop" },
+    scala = { "scalafmt" },
     terraform = { "terraform_fmt" },
     toml = { "taplo" },
     typescript = { "prettier" },

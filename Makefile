@@ -31,6 +31,12 @@ install-macos:
 	# terraform
 	brew tap hashicorp/tap
 	brew install hashicorp/tap/terraform
+	# scala
+	@echo "Installing Scala tooling (JDK, Coursier, Metals)..."
+	brew install --cask temurin
+	brew tap coursier/formulas
+	brew install coursier/formulas/coursier
+	cs install metals scalafmt
 	# neovim
 	brew install neovim
 
@@ -52,6 +58,10 @@ install-linux:
 		wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg; \
 		echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list; \
 		sudo apt-get update && sudo apt-get install terraform; \
+		# Install Scala tooling
+		echo "Installing Scala tooling (JDK, Coursier, Metals)..."; \
+		sudo apt-get install -y openjdk-17-jdk; \
+		curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > /tmp/cs && chmod +x /tmp/cs && /tmp/cs install metals scalafmt && sudo mv /tmp/cs /usr/local/bin/cs; \
 	elif command -v yum >/dev/null 2>&1; then \
 		echo "Using yum (RHEL/CentOS)"; \
 		sudo yum install -y ripgrep neovim; \
@@ -65,18 +75,28 @@ install-linux:
 		sudo yum install -y yum-utils; \
 		sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo; \
 		sudo yum -y install terraform; \
+		# Install Scala tooling
+		echo "Installing Scala tooling (JDK, Coursier, Metals)..."; \
+		sudo yum install -y java-17-openjdk; \
+		curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > /tmp/cs && chmod +x /tmp/cs && /tmp/cs install metals scalafmt && sudo mv /tmp/cs /usr/local/bin/cs; \
 	elif command -v pacman >/dev/null 2>&1; then \
 		echo "Using pacman (Arch Linux)"; \
-		sudo pacman -S --noconfirm ripgrep neovim terraform; \
+		sudo pacman -S --noconfirm ripgrep neovim terraform jdk17-openjdk; \
 		# Install claude-agent-acp via npm; \
 		command -v npm >/dev/null 2>&1 && npm install -g @agentclientprotocol/claude-agent-acp || echo "npm not found, please install claude-agent-acp manually"; \
 		# Install Hack Nerd Font
 		yay -S --noconfirm nerd-fonts-hack || paru -S --noconfirm nerd-fonts-hack || echo "Please install nerd-fonts-hack manually"; \
+		# Install Scala tooling
+		echo "Installing Scala tooling (Coursier, Metals)..."; \
+		curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > /tmp/cs && chmod +x /tmp/cs && /tmp/cs install metals scalafmt && sudo mv /tmp/cs /usr/local/bin/cs; \
 	else \
 		echo "Unsupported Linux distribution. Please install the following manually:"; \
 		echo "- ripgrep"; \
 		echo "- neovim"; \
 		echo "- terraform"; \
+		echo "- JDK 17+"; \
+		echo "- Coursier"; \
+		echo "- Metals"; \
 		echo "- Hack Nerd Font"; \
 	fi
 

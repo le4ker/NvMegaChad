@@ -20,7 +20,7 @@ providing comprehensive out-of-the-box support for modern development workflows.
 ## ✨ Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
-- **Multi-language Support** — 18 languages with LSP, formatting, and linting
+- **Multi-language Support** — 19 languages with LSP, formatting, and linting
 - **Debugging** — Integrated DAP support for Go and Python
 - **AI Assistant** — Built-in
   [CodeCompanion](https://github.com/olimorris/codecompanion.nvim) with
@@ -74,6 +74,10 @@ providing comprehensive out-of-the-box support for modern development workflows.
 | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/quickstart) | Latest  | For AI assistant                |
 | [claude-agent-acp](https://github.com/zed-industries/claude-agent-acp)   | Latest  | ACP bridge for Claude Code      |
 | [Terraform](https://www.terraform.io/)                                   | Latest  | Optional, for Terraform support |
+| JDK 17+                                                                  | Latest  | Optional, for Scala support     |
+| [Coursier](https://get-coursier.io/)                                     | Latest  | Optional, for Scala support     |
+| [Metals](https://scalameta.org/metals/)                                  | Latest  | Optional, for Scala support     |
+| [scalafmt](https://scalameta.org/scalafmt/)                              | Latest  | Optional, for Scala support     |
 
 > **Tip:** All dependencies can be installed automatically by running
 > `make install`
@@ -114,6 +118,7 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | C/C++                 | [clangd](https://clangd.llvm.org)                                                                                                        | [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html) | —                                                          | —                                               |
 | Lua                   | [lua-language-server](https://github.com/LuaLS/lua-language-server)                                                                      | [stylua](https://github.com/JohnnyMorganz/StyLua)                                | —                                                          | —                                               |
 | Ruby                  | [ruby-lsp](https://github.com/Shopify/ruby-lsp)                                                                                          | [rubocop](https://github.com/rubocop/rubocop)                                    | [rubocop](https://github.com/rubocop/rubocop)              | —                                               |
+| Scala                 | [metals](https://scalameta.org/metals/)                                                                                                  | [scalafmt](https://scalameta.org/scalafmt/)                                      | —                                                          | —                                               |
 | TypeScript/JavaScript | [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)                                   | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
 | HTML/CSS/SCSS         | [html-lsp](https://github.com/microsoft/vscode-html-languageservice), [css-lsp](https://github.com/microsoft/vscode-css-languageservice) | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |
 | JSON                  | [json-language-server](https://github.com/microsoft/vscode-langservers-extracted)                                                        | [prettier](https://github.com/prettier/prettier)                                 | —                                                          | —                                               |

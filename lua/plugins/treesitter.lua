@@ -32,6 +32,7 @@ return {
       "python",
       "requirements",
       "ruby",
+      "scala",
       "scss",
       "sql",
       "starlark",

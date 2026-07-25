@@ -26,4 +26,12 @@ vim.lsp.inlay_hint.enable(true)
 -- Enable native LSP completion
 require "configs.completion"
 
+-- Load per-server configs from lua/lsp/<server>.lua
+for _, server in ipairs(servers) do
+  local ok, config = pcall(require, "lsp." .. server)
+  if ok then
+    vim.lsp.config(server, config)
+  end
+end
+
 vim.lsp.enable(servers)
