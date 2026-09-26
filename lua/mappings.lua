@@ -124,6 +124,7 @@ map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "NvChad Toggle NvCheats
 map("n", "<leader>th", "<cmd>Telescope themes<CR>", { desc = "NvChad Show Themes", silent = true })
 
 -- LSP
+map("i", "<leader>i", "<C-x><C-o>", { desc = "LSP Trigger Completion" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "LSP Go To Declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Go To Definition" })
 map("n", "gi", vim.lsp.buf.implementation, { desc = "LSP Go To Implementation" })
