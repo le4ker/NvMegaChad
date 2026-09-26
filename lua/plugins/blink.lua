@@ -1,21 +1,22 @@
 return {
   "saghen/blink.cmp",
-  event = "InsertEnter",
-  version = "1.*", -- pin to stable v1, avoid v2's breaking changes for now
-  dependencies = {
-    "rafamadriz/friendly-snippets", -- snippet source
-  },
+  dependencies = "rafamadriz/friendly-snippets",
+  version = "*",
   opts = {
-    keymap = { preset = "default" }, -- <C-n>/<C-p>/<C-y>-style, or "super-tab" if you prefer Tab-driven
-    appearance = {
-      nerd_font_variant = "mono", -- match your existing icon font
+    keymap = {
+      preset = "none",
+      ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<Tab>"] = { "select_next", "fallback" },
+      ["<S-Tab>"] = { "select_prev", "fallback" },
+      ["<CR>"] = { "accept", "fallback" },
+      ["<C-e>"] = { "hide", "fallback" },
     },
-    completion = {
-      documentation = { auto_show = true },
+    appearance = {
+      use_nvim_cmp_as_default = true,
+      nerd_font_variant = "mono",
     },
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
     },
-    signature = { enabled = true },
   },
 }

@@ -57,16 +57,6 @@ end, { desc = "Buffer Go To Previous" })
 map("n", "<leader>x", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "Buffer Close" })
-map({ "i", "s" }, "<Tab>", function()
-  if vim.fn.pumvisible() == 1 then
-    return "<C-n>"
-  elseif vim.snippet.active { direction = 1 } then
-    vim.snippet.jump(1)
-    return ""
-  else
-    return "<Tab>"
-  end
-end, { expr = true, silent = true, desc = "General Next Completion" })
 
 map({ "i", "s" }, "<S-Tab>", function()
   if vim.fn.pumvisible() == 1 then
@@ -78,14 +68,6 @@ map({ "i", "s" }, "<S-Tab>", function()
     return "<S-Tab>"
   end
 end, { expr = true, silent = true, desc = "General Previous Completion" })
-
-map("i", "<CR>", function()
-  if vim.fn.pumvisible() == 1 then
-    return "<C-y>"
-  else
-    return "<CR>"
-  end
-end, { expr = true, silent = true, desc = "General Accept Completion" })
 
 -- NvimTree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Explorer Toggle", silent = true })
@@ -124,7 +106,6 @@ map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "NvChad Toggle NvCheats
 map("n", "<leader>th", "<cmd>Telescope themes<CR>", { desc = "NvChad Show Themes", silent = true })
 
 -- LSP
-map("i", "<leader>i", "<C-x><C-o>", { desc = "LSP Trigger Completion" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "LSP Go To Declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Go To Definition" })
 map("n", "gi", vim.lsp.buf.implementation, { desc = "LSP Go To Implementation" })
