@@ -17,7 +17,7 @@ A batteries-included [Neovim](https://neovim.io/) configuration built on top of
 [NvChad](https://nvchad.com/). Designed with a minimal UI philosophy while
 providing comprehensive out-of-the-box support for modern development workflows.
 
-## ✨ Features
+## Features
 
 - **Minimal UI** — Clean interface with thoughtfully designed key mappings
 - **Multi-language Support** — 19 languages with LSP, formatting, and linting
@@ -29,7 +29,7 @@ providing comprehensive out-of-the-box support for modern development workflows.
 - **Markdown Preview** — Live preview for documentation workflows
 - **Git Integration** — Visual commit history and diff tools
 
-## 📸 Screenshots
+## Screenshots
 
 <details>
 <summary>Click to expand</summary>
@@ -64,7 +64,7 @@ providing comprehensive out-of-the-box support for modern development workflows.
 
 </details>
 
-## 📋 Requirements
+## Requirements
 
 | Dependency                                                               | Version | Notes                           |
 | ------------------------------------------------------------------------ | ------- | ------------------------------- |
@@ -82,7 +82,7 @@ providing comprehensive out-of-the-box support for modern development workflows.
 > **Tip:** All dependencies can be installed automatically by running
 > `make install`
 
-## 🚀 Installation
+## Installation
 
 ### Quick Install
 
@@ -109,7 +109,7 @@ make install
 NVIM_APPNAME=le4ker/NvMegaChad nvim
 ```
 
-## 🗣️ Supported Languages
+## Supported Languages
 
 | Language              | LSP                                                                                                                                      | Formatter                                                                        | Linter                                                     | Debugger                                        |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------- |
@@ -133,7 +133,7 @@ NVIM_APPNAME=le4ker/NvMegaChad nvim
 | Vimscript             | [vim-language-server](https://github.com/iamcco/vim-language-server)                                                                     | —                                                                                | —                                                          | —                                               |
 | SQL                   | —                                                                                                                                        | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)              | —                                                          | —                                               |
 
-## 🛠️ Development
+## Development
 
 ### Git Hooks Setup
 
